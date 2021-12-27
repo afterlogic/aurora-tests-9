@@ -1,0 +1,38 @@
+Return-path: <e.sokolova@afterlogic.com>
+Envelope-to: test@afterlogic.com
+Delivery-date: Wed, 25 Aug 2021 04:04:14 -0700
+Received: from [64.150.188.238] (helo=aurora.afterlogic.com)
+	by mx.afterlogic.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <e.sokolova@afterlogic.com>)
+	id 1mIqhZ-009VqV-OQ
+	for test@afterlogic.com; Wed, 25 Aug 2021 04:04:13 -0700
+Mime-Version: 1.0
+Date: Wed, 25 Aug 2021 11:04:13 +0000
+Content-Type: multipart/alternative;
+ boundary="----=_Part_164_503098970.1629889453"
+Message-ID: <098188324463bedce4b473dd8abdb9d0@aurora.afterlogic.com>
+X-Mailer: Afterlogic webmail client
+X-Original-IP: 80.72.17.50
+From: e.sokolova@afterlogic.com
+Subject: test filters
+To: "Test Afterlogic 1" <test@afterlogic.com>
+X-Priority: 3 (Normal)
+
+
+------=_Part_164_503098970.1629889453
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+text
+
+------=_Part_164_503098970.1629889453
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"t=
+ext/html; charset=3Dutf-8" /></head><body><div data-crea=3D"font-wrapper"=
+ style=3D"font-family: Tahoma, sans-serif; font-size: 16px; direction: lt=
+r">text<br><br><div></div><br></div></body></html>
+
+------=_Part_164_503098970.1629889453--
