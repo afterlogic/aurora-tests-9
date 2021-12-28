@@ -2042,7 +2042,7 @@
                   "pm.test(\"Folder was renamed successfully\", function() {",
                   "   pm.expect(jsonData).to.have.property('Result', true);",
                   "   ",
-                  "   pm.collectionVariables.set(\"NewFolderName3\", \"Shared folder renamed\");",
+                  "   pm.collectionVariables.set(\"NewFolderName3\", \"Shared folder renamed2\");",
                   "});"
                 ],
                 "type": "text/javascript"
@@ -4265,87 +4265,87 @@
   ],
   "variable": [
     {
-      "id": "b51ab19e-9de7-495d-808e-4ddd883b5af4",
+      "id": "6f8d2944-5cb5-43ec-bc74-e505bdef6894",
       "key": "User1Id",
       "value": ""
     },
     {
-      "id": "c1efeaba-99ef-4223-8ac1-f5f5e15606ac",
+      "id": "e0aa696e-f9ff-4ddc-8f4b-d518764a3562",
       "key": "User1AuthToken",
       "value": ""
     },
     {
-      "id": "aaa9aede-85c3-44d5-bc58-275eda0e3e38",
+      "id": "75c5dcb3-8552-4ed7-b433-552f2d5b4ed0",
       "key": "User2Id",
       "value": ""
     },
     {
-      "id": "2df4f785-d793-4fa3-9fe2-6200a5cd4eb5",
+      "id": "e83afad7-abed-42e6-be17-d2b7d4a62d45",
       "key": "User2AuthToken",
       "value": ""
     },
     {
-      "id": "56bb8aa3-ccb4-4e28-89a7-274dbe24ea92",
+      "id": "333c33a3-6eba-4e61-9251-0d1606d1757b",
       "key": "User3Id",
       "value": ""
     },
     {
-      "id": "1cbb229f-2e5a-4f2e-b46d-6f1ea9a676fe",
+      "id": "d69ee918-6601-48f8-a6ff-eee64b78894b",
       "key": "User3AuthToken",
       "value": ""
     },
     {
-      "id": "fca947ec-6b68-4283-826d-157e020217f0",
+      "id": "d55325c1-cd9c-4ed6-9b41-f2aaec180ecc",
       "key": "NewFileName1",
       "value": ""
     },
     {
-      "id": "c6f3d441-f9aa-4496-ae91-649ac11837fd",
+      "id": "47b66c3b-29f9-4200-991f-dd3693a217b9",
       "key": "NewFileName2",
       "value": ""
     },
     {
-      "id": "9e3bf979-7b9b-4dfe-98ec-bcbe88efc61f",
+      "id": "d195f62d-1648-4ee3-85a2-18d33d11e0af",
       "key": "NewFileName3",
       "value": ""
     },
     {
-      "id": "9147f716-cc8f-461b-81dd-cfcf2b24a15e",
+      "id": "b65fcb3e-02aa-4c9f-b5fd-7de043f2b6c9",
       "key": "NewFolderName1",
       "value": ""
     },
     {
-      "id": "9e552a5a-fd2b-4774-8595-8b526590cdd0",
+      "id": "d75afcb9-2081-4f72-a929-0be7d938d5c5",
       "key": "NewFolderName2",
       "value": ""
     },
     {
-      "id": "28c45c1e-7dcb-4606-8d83-afde5ab52396",
+      "id": "ab4baa11-4458-4db8-9681-9f7396668ac0",
       "key": "NewFolderName3",
       "value": ""
     },
     {
-      "id": "d27254d6-3841-498b-a04a-e71d4c7b19e0",
+      "id": "e4306451-448e-40a1-8e5a-9355c927dbe4",
       "key": "NewFileName4",
       "value": ""
     },
     {
-      "id": "4a7c86ae-46b2-4bc9-8282-a46793fa8b5e",
+      "id": "f8bf3aef-9627-4dfc-b931-1327cfc63509",
       "key": "NewFileName5",
       "value": ""
     },
     {
-      "id": "44098eb7-bbc6-4b59-ba50-ad4f682144ba",
+      "id": "195f733d-4f0c-4617-b87a-e07374e99630",
       "key": "NewFileName6",
       "value": ""
     },
     {
-      "id": "a740383b-77b5-425e-b33c-b7aa73485dfa",
+      "id": "b7f8ffa3-9730-48f1-bfe1-f26f0d9ae120",
       "key": "NewFileName7",
       "value": ""
     },
     {
-      "id": "a3c940a5-e860-40f9-8bbd-a325c132e061",
+      "id": "9b664fdf-9b4c-44f6-8ea7-3395aead2c0f",
       "key": "NewFileName8",
       "value": ""
     }
