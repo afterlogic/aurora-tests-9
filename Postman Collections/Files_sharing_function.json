@@ -35,7 +35,7 @@
               }
             }
           ],
-          "_postman_id": "5a64124b-f73d-4988-9b4b-e18f8894f153",
+          "id": "5a64124b-f73d-4988-9b4b-e18f8894f153",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -63,10 +63,7 @@
                   "type": "text",
                   "value": "{\"Login\":\"{{Email1}}\",\"Password\":\"{{Password1}}\",\"Pattern\":\"\"}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -111,7 +108,7 @@
               }
             }
           ],
-          "_postman_id": "d645ab83-87a7-44d4-9d05-64eb91a2427c",
+          "id": "d645ab83-87a7-44d4-9d05-64eb91a2427c",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -139,10 +136,7 @@
                   "type": "text",
                   "value": "{\"Login\":\"{{Email2}}\",\"Password\":\"{{Password2}}\",\"Pattern\":\"\"}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -187,7 +181,7 @@
               }
             }
           ],
-          "_postman_id": "7d6ef7ec-238d-45e9-87ce-ec6e5c3f7458",
+          "id": "7d6ef7ec-238d-45e9-87ce-ec6e5c3f7458",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -215,10 +209,7 @@
                   "type": "text",
                   "value": "{\"Login\":\"{{Email3}}\",\"Password\":\"{{Password3}}\",\"Pattern\":\"\"}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -237,7 +228,7 @@
           "response": []
         }
       ],
-      "_postman_id": "667b11a1-6006-4488-b261-94cdf08d44de"
+      "id": "667b11a1-6006-4488-b261-94cdf08d44de"
     },
     {
       "name": "Files>UploadFile",
@@ -285,7 +276,7 @@
               }
             }
           ],
-          "_postman_id": "b5361154-a6f0-4a05-a6b9-462350557a59",
+          "id": "b5361154-a6f0-4a05-a6b9-462350557a59",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -326,10 +317,7 @@
                   "type": "file",
                   "src": "shared files/read.txt"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -389,7 +377,7 @@
               }
             }
           ],
-          "_postman_id": "d541f9b0-7ecd-4d1f-a1a0-59dfdc3cf1a5",
+          "id": "d541f9b0-7ecd-4d1f-a1a0-59dfdc3cf1a5",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -430,10 +418,7 @@
                   "type": "file",
                   "src": "shared files/write.txt"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -493,7 +478,7 @@
               }
             }
           ],
-          "_postman_id": "d27b726d-9e21-410a-becf-bdcfdae2e55c",
+          "id": "d27b726d-9e21-410a-becf-bdcfdae2e55c",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -534,10 +519,7 @@
                   "type": "file",
                   "src": "shared files/reshare.txt"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -597,7 +579,7 @@
               }
             }
           ],
-          "_postman_id": "b6a214f8-7a4e-4986-b23d-1223fc804c0e",
+          "id": "b6a214f8-7a4e-4986-b23d-1223fc804c0e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -638,10 +620,7 @@
                   "type": "file",
                   "src": "shared files/read.txt"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -701,7 +680,7 @@
               }
             }
           ],
-          "_postman_id": "50b0122a-3ab1-445e-8c74-70df1840f32a",
+          "id": "50b0122a-3ab1-445e-8c74-70df1840f32a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -742,10 +721,7 @@
                   "type": "file",
                   "src": "shared files/write.txt"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -805,7 +781,7 @@
               }
             }
           ],
-          "_postman_id": "773b3776-8ea2-433f-9480-135e39b329f1",
+          "id": "773b3776-8ea2-433f-9480-135e39b329f1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -846,10 +822,7 @@
                   "type": "file",
                   "src": "shared files/reshare.txt"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -867,7 +840,7 @@
           "response": []
         }
       ],
-      "_postman_id": "16340dd4-ba29-4e71-b751-7cca907268f4",
+      "id": "16340dd4-ba29-4e71-b751-7cca907268f4",
       "auth": {
         "type": "noauth"
       },
@@ -920,7 +893,7 @@
               }
             }
           ],
-          "_postman_id": "e4caf84d-88e0-4d2a-9b46-366270db1ff4",
+          "id": "e4caf84d-88e0-4d2a-9b46-366270db1ff4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -951,10 +924,7 @@
                   "value": "{\"Storage\":\"personal\",\"Path\":\"\",\"Id\":\"read.txt\",\"Shares\":[{\"PublicId\":\"{{Email2}}\",\"Access\":2}],\"IsDir\":false}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -994,7 +964,7 @@
               }
             }
           ],
-          "_postman_id": "42b2edc5-246a-4005-9d84-d080a14b5814",
+          "id": "42b2edc5-246a-4005-9d84-d080a14b5814",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1025,10 +995,7 @@
                   "value": "{\"Storage\":\"personal\",\"Path\":\"\",\"Id\":\"write.txt\",\"Shares\":[{\"PublicId\":\"{{Email2}}\",\"Access\":1}],\"IsDir\":false}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -1068,7 +1035,7 @@
               }
             }
           ],
-          "_postman_id": "6aed0ecc-c9b8-413f-b275-273d5456f3cf",
+          "id": "6aed0ecc-c9b8-413f-b275-273d5456f3cf",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1099,10 +1066,7 @@
                   "value": "{\"Storage\":\"personal\",\"Path\":\"\",\"Id\":\"reshare.txt\",\"Shares\":[{\"PublicId\":\"{{Email2}}\",\"Access\":3}],\"IsDir\":false}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -1174,7 +1138,7 @@
               }
             }
           ],
-          "_postman_id": "8486daa8-d8f6-47a3-87e5-b271cb9ba300",
+          "id": "8486daa8-d8f6-47a3-87e5-b271cb9ba300",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1205,10 +1169,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Pattern\":\"\"}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -1226,7 +1187,7 @@
           "response": []
         }
       ],
-      "_postman_id": "6e49ad3f-b2dd-4571-95d6-e046104b93f2",
+      "id": "6e49ad3f-b2dd-4571-95d6-e046104b93f2",
       "auth": {
         "type": "noauth"
       },
@@ -1299,7 +1260,7 @@
               }
             }
           ],
-          "_postman_id": "53ed918a-2a0f-4c6b-9995-736334a9c477",
+          "id": "53ed918a-2a0f-4c6b-9995-736334a9c477",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1346,10 +1307,7 @@
                   "type": "file",
                   "src": "shared files modified/read (1).txt"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -1409,7 +1367,7 @@
               }
             }
           ],
-          "_postman_id": "cd4038ca-541a-49a5-a7e5-c1512bc9738c",
+          "id": "cd4038ca-541a-49a5-a7e5-c1512bc9738c",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1450,10 +1408,7 @@
                   "type": "file",
                   "src": "shared files modified/write (1).txt"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -1513,7 +1468,7 @@
               }
             }
           ],
-          "_postman_id": "f88882c6-4e53-415b-9e51-ec6e5e7c9048",
+          "id": "f88882c6-4e53-415b-9e51-ec6e5e7c9048",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1554,10 +1509,7 @@
                   "type": "file",
                   "src": "shared files modified/reshare (1).txt"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -1575,7 +1527,7 @@
           "response": []
         }
       ],
-      "_postman_id": "4d8502c0-c84e-4f72-ba6b-2e1b732057ff",
+      "id": "4d8502c0-c84e-4f72-ba6b-2e1b732057ff",
       "auth": {
         "type": "noauth"
       },
@@ -1625,7 +1577,7 @@
               }
             }
           ],
-          "_postman_id": "c284db0d-3e34-4d6e-b166-fccceff7dd87",
+          "id": "c284db0d-3e34-4d6e-b166-fccceff7dd87",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1656,10 +1608,7 @@
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"FolderName\":\"Shared folder\"}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -1696,7 +1645,7 @@
               }
             }
           ],
-          "_postman_id": "eab6193e-f6af-45d8-8d23-62d5d41e1a54",
+          "id": "eab6193e-f6af-45d8-8d23-62d5d41e1a54",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1727,10 +1676,7 @@
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"FolderName\":\"Shared folder\"}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -1770,7 +1716,7 @@
               }
             }
           ],
-          "_postman_id": "1df3dad6-2beb-41ee-a759-5d133d4936f3",
+          "id": "1df3dad6-2beb-41ee-a759-5d133d4936f3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1801,10 +1747,7 @@
                   "value": "{\"Storage\":\"personal\",\"Path\":\"\",\"Id\":\"{{NewFolderName1}}\",\"Shares\":[{\"PublicId\":\"{{Email2}}\",\"Access\":1}],\"IsDir\":true}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -1822,7 +1765,7 @@
           "response": []
         }
       ],
-      "_postman_id": "5bdf6982-4413-4055-8fcf-07331a88d014",
+      "id": "5bdf6982-4413-4055-8fcf-07331a88d014",
       "auth": {
         "type": "noauth"
       },
@@ -1882,7 +1825,7 @@
               }
             }
           ],
-          "_postman_id": "5b036f84-2e30-49ce-8584-86ed97c8b098",
+          "id": "5b036f84-2e30-49ce-8584-86ed97c8b098",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1913,10 +1856,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"read (1).txt\",\"NewName\":\"read renamed.txt\",\"IsLink\":false,\"IsFolder\":false}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -1963,7 +1903,7 @@
               }
             }
           ],
-          "_postman_id": "876a0265-654f-4e14-a486-0fdb1a1182a4",
+          "id": "876a0265-654f-4e14-a486-0fdb1a1182a4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1994,10 +1934,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"write (1).txt\",\"NewName\":\"write renamed.txt\",\"IsLink\":false,\"IsFolder\":false}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2044,7 +1981,7 @@
               }
             }
           ],
-          "_postman_id": "8e236c8a-304b-4b5a-b437-0115e0c0c947",
+          "id": "8e236c8a-304b-4b5a-b437-0115e0c0c947",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2075,10 +2012,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"reshare (1).txt\",\"NewName\":\"reshare renamed.txt\",\"IsLink\":false,\"IsFolder\":false}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2115,7 +2049,7 @@
               }
             }
           ],
-          "_postman_id": "1df934b9-4d96-4767-a633-21cdc6c4fb94",
+          "id": "1df934b9-4d96-4767-a633-21cdc6c4fb94",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2146,10 +2080,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"Shared folder (1)\",\"NewName\":\"Shared folder renamed2\",\"IsFolder\":true}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2167,7 +2098,7 @@
           "response": []
         }
       ],
-      "_postman_id": "479c3973-53b1-4165-8b26-86acf64223f1",
+      "id": "479c3973-53b1-4165-8b26-86acf64223f1",
       "auth": {
         "type": "noauth"
       },
@@ -2219,7 +2150,7 @@
               }
             }
           ],
-          "_postman_id": "e11ae0fc-037d-4c0a-83ed-3656b4c9c856",
+          "id": "e11ae0fc-037d-4c0a-83ed-3656b4c9c856",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2250,10 +2181,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"read (1).txt\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2293,7 +2221,7 @@
               }
             }
           ],
-          "_postman_id": "c905fe43-6c5f-4e1a-80af-72b935b1865b",
+          "id": "c905fe43-6c5f-4e1a-80af-72b935b1865b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2324,10 +2252,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName5}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2366,7 +2291,7 @@
               }
             }
           ],
-          "_postman_id": "55d8c6b6-1380-4e9f-83ea-42e10f524b39",
+          "id": "55d8c6b6-1380-4e9f-83ea-42e10f524b39",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2397,10 +2322,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"reshare renamed.txt\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2418,7 +2340,7 @@
           "response": []
         }
       ],
-      "_postman_id": "98f7a8da-ba9f-4302-a9a6-2360c60b23e2",
+      "id": "98f7a8da-ba9f-4302-a9a6-2360c60b23e2",
       "auth": {
         "type": "noauth"
       },
@@ -2470,7 +2392,7 @@
               }
             }
           ],
-          "_postman_id": "a2f20dda-25e8-4285-ba6b-1832783db1ae",
+          "id": "a2f20dda-25e8-4285-ba6b-1832783db1ae",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2501,10 +2423,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"read (1).txt\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2544,7 +2463,7 @@
               }
             }
           ],
-          "_postman_id": "805052e5-aee3-4993-8e3c-64178a6431d4",
+          "id": "805052e5-aee3-4993-8e3c-64178a6431d4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2575,10 +2494,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName5}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2617,7 +2533,7 @@
               }
             }
           ],
-          "_postman_id": "604583eb-846f-4cc8-949d-c3c4fde4795a",
+          "id": "604583eb-846f-4cc8-949d-c3c4fde4795a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2648,10 +2564,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"reshare renamed.txt\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2669,7 +2582,7 @@
           "response": []
         }
       ],
-      "_postman_id": "e5028769-8029-44ed-8780-9e9cf80c74ee",
+      "id": "e5028769-8029-44ed-8780-9e9cf80c74ee",
       "auth": {
         "type": "noauth"
       },
@@ -2731,7 +2644,7 @@
               }
             }
           ],
-          "_postman_id": "8320068f-fb37-43e6-b887-6e24bcb53a24",
+          "id": "8320068f-fb37-43e6-b887-6e24bcb53a24",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2762,10 +2675,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"{{NewFileName1}}\",\"NewName\":\"read renamed1.txt\",\"IsLink\":false,\"IsFolder\":false}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2812,7 +2722,7 @@
               }
             }
           ],
-          "_postman_id": "82067afe-152a-47b6-8dfb-3950bc724604",
+          "id": "82067afe-152a-47b6-8dfb-3950bc724604",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2843,10 +2753,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"{{NewFileName2}}\",\"NewName\":\"write renamed1.txt\",\"IsLink\":false,\"IsFolder\":false}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2893,7 +2800,7 @@
               }
             }
           ],
-          "_postman_id": "854b9f0e-1d4f-4ddd-bebb-a50df508baa2",
+          "id": "854b9f0e-1d4f-4ddd-bebb-a50df508baa2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2924,10 +2831,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"{{NewFileName3}}\",\"NewName\":\"reshare renamed1.txt\",\"IsLink\":false,\"IsFolder\":false}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -2964,7 +2868,7 @@
               }
             }
           ],
-          "_postman_id": "3e9f1bdc-d250-4d1a-b804-0fca0652aee8",
+          "id": "3e9f1bdc-d250-4d1a-b804-0fca0652aee8",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2995,10 +2899,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"{{NewFolderName1}}\",\"NewName\":\"Shared folder renamed1\",\"IsFolder\":true}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3016,7 +2917,7 @@
           "response": []
         }
       ],
-      "_postman_id": "4b8e3dac-e21d-4e94-ba4d-ce771309c17b",
+      "id": "4b8e3dac-e21d-4e94-ba4d-ce771309c17b",
       "auth": {
         "type": "noauth"
       },
@@ -3068,7 +2969,7 @@
               }
             }
           ],
-          "_postman_id": "b20ed0cd-1a1b-4f20-a0d5-caa764e243b1",
+          "id": "b20ed0cd-1a1b-4f20-a0d5-caa764e243b1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3099,10 +3000,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName1}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName1}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3141,7 +3039,7 @@
               }
             }
           ],
-          "_postman_id": "07a527a6-345c-4c38-b1d4-f824f993fe80",
+          "id": "07a527a6-345c-4c38-b1d4-f824f993fe80",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3172,10 +3070,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName1}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName2}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3214,7 +3109,7 @@
               }
             }
           ],
-          "_postman_id": "389cef81-19de-4618-9930-0b32c9479875",
+          "id": "389cef81-19de-4618-9930-0b32c9479875",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3245,10 +3140,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName1}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName3}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3266,7 +3158,7 @@
           "response": []
         }
       ],
-      "_postman_id": "931461d0-2ad1-452f-bbf6-1d706fb6c999",
+      "id": "931461d0-2ad1-452f-bbf6-1d706fb6c999",
       "auth": {
         "type": "noauth"
       },
@@ -3319,7 +3211,7 @@
               }
             }
           ],
-          "_postman_id": "97e84031-fdc8-4e1c-a1a2-3c02b89691ef",
+          "id": "97e84031-fdc8-4e1c-a1a2-3c02b89691ef",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3350,10 +3242,7 @@
                   "value": "{\"Storage\":\"personal\",\"Path\":\"\",\"Id\":\"{{NewFileName6}}\",\"Shares\":[{\"PublicId\":\"{{Email2}}\",\"Access\":3},{\"PublicId\":\"{{Email3}}\",\"Access\":1}],\"IsDir\":false}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3371,7 +3260,7 @@
           "response": []
         }
       ],
-      "_postman_id": "48352e06-9fde-481b-b951-544f2a154eda",
+      "id": "48352e06-9fde-481b-b951-544f2a154eda",
       "auth": {
         "type": "noauth"
       },
@@ -3423,7 +3312,7 @@
               }
             }
           ],
-          "_postman_id": "0efcca7a-8054-47f1-aeeb-21320afd4bea",
+          "id": "0efcca7a-8054-47f1-aeeb-21320afd4bea",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3454,10 +3343,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"/{{NewFolderName1}}\",\"ToPath\":\"\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"/{{NewFolderName1}}\",\"Name\":\"{{NewFileName1}}\",\"IsFolder\":false},{\"FromType\":\"personal\",\"FromPath\":\"/{{NewFolderName1}}\",\"Name\":\"{{NewFileName2}}\",\"IsFolder\":false},{\"FromType\":\"personal\",\"FromPath\":\"/{{NewFolderName1}}\",\"Name\":\"{{NewFileName3}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3475,7 +3361,7 @@
           "response": []
         }
       ],
-      "_postman_id": "5809bf13-a70f-4018-8da7-d79dac172435",
+      "id": "5809bf13-a70f-4018-8da7-d79dac172435",
       "auth": {
         "type": "noauth"
       },
@@ -3531,7 +3417,7 @@
               }
             }
           ],
-          "_postman_id": "0a352792-50ba-41c6-9831-3836beb84912",
+          "id": "0a352792-50ba-41c6-9831-3836beb84912",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3562,10 +3448,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName1}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3608,7 +3491,7 @@
               }
             }
           ],
-          "_postman_id": "1a5b7485-4d80-4570-a03a-df6b2e8bfffb",
+          "id": "1a5b7485-4d80-4570-a03a-df6b2e8bfffb",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3639,10 +3522,7 @@
                   "type": "text",
                   "value": "{\"FromType\":\"personal\",\"ToType\":\"corporate\",\"FromPath\":\"\",\"ToPath\":\"\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName3}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3685,7 +3565,7 @@
               }
             }
           ],
-          "_postman_id": "df1ab99e-3010-4f34-a8cf-7231ce92c9ba",
+          "id": "df1ab99e-3010-4f34-a8cf-7231ce92c9ba",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3716,10 +3596,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFileName7}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3762,7 +3639,7 @@
               }
             }
           ],
-          "_postman_id": "ccd10af2-8f47-4e65-b26e-57eaaa172ed4",
+          "id": "ccd10af2-8f47-4e65-b26e-57eaaa172ed4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3793,10 +3670,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"corporate\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFileName8}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3814,7 +3688,7 @@
           "response": []
         }
       ],
-      "_postman_id": "0ea63ac7-a610-45aa-b700-46a569f3007b",
+      "id": "0ea63ac7-a610-45aa-b700-46a569f3007b",
       "auth": {
         "type": "noauth"
       },
@@ -3866,7 +3740,7 @@
               }
             }
           ],
-          "_postman_id": "cb3180fa-a897-48b9-b5b2-ecab6115ef14",
+          "id": "cb3180fa-a897-48b9-b5b2-ecab6115ef14",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3897,10 +3771,7 @@
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"read (1).txt\",\"IsFolder\":false}]}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -3941,7 +3812,7 @@
               }
             }
           ],
-          "_postman_id": "b253b87d-831b-4851-b143-87c46eaf8cd3",
+          "id": "b253b87d-831b-4851-b143-87c46eaf8cd3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3972,10 +3843,7 @@
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFileName5}}\",\"IsFolder\":false}]}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -4016,7 +3884,7 @@
               }
             }
           ],
-          "_postman_id": "fa56a810-f0b7-4450-a29b-2a2fb4a3e301",
+          "id": "fa56a810-f0b7-4450-a29b-2a2fb4a3e301",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4047,10 +3915,7 @@
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFileName6}}\",\"IsFolder\":false}]}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -4091,7 +3956,7 @@
               }
             }
           ],
-          "_postman_id": "ab948006-6ae7-45a3-ab85-f57360e66e40",
+          "id": "ab948006-6ae7-45a3-ab85-f57360e66e40",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4122,10 +3987,7 @@
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFolderName2}}\",\"IsFolder\":true}]}",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -4143,7 +4005,7 @@
           "response": []
         }
       ],
-      "_postman_id": "3713c8e1-4e00-4bce-aaf6-18b591059be6",
+      "id": "3713c8e1-4e00-4bce-aaf6-18b591059be6",
       "auth": {
         "type": "noauth"
       },
@@ -4200,7 +4062,7 @@
               }
             }
           ],
-          "_postman_id": "c072135c-9df2-4d0d-af19-fd02e0416736",
+          "id": "c072135c-9df2-4d0d-af19-fd02e0416736",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4231,10 +4093,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFolderName1}}\",\"IsFolder\":true},{\"Path\":\"\",\"Name\":\"{{NewFileName1}}\",\"IsFolder\":false},{\"Path\":\"\",\"Name\":\"{{NewFileName2}}\",\"IsFolder\":false},{\"Path\":\"\",\"Name\":\"{{NewFileName3}}\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -4278,7 +4137,7 @@
               }
             }
           ],
-          "_postman_id": "1a081f0a-03c0-4c3a-a4da-35c5c9b27e5d",
+          "id": "1a081f0a-03c0-4c3a-a4da-35c5c9b27e5d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4309,10 +4168,7 @@
                   "type": "text",
                   "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"Shared folder\",\"IsFolder\":true},{\"Path\":\"\",\"Name\":\"read.txt\",\"IsFolder\":false},{\"Path\":\"\",\"Name\":\"reshare.txt\",\"IsFolder\":false},{\"Path\":\"\",\"Name\":\"write.txt\",\"IsFolder\":false}]}"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{HostName}}?/Api/",
@@ -4330,7 +4186,7 @@
           "response": []
         }
       ],
-      "_postman_id": "a91e36b9-d4b6-40bb-a4e8-6191128e9dc0",
+      "id": "a91e36b9-d4b6-40bb-a4e8-6191128e9dc0",
       "auth": {
         "type": "noauth"
       },
@@ -4409,100 +4265,89 @@
   ],
   "variable": [
     {
-      "id": "0c8389a9-5f6e-4893-8a5b-700fa5c60e47",
+      "id": "34a7c4bf-c878-4c08-b642-ef3109f49806",
       "key": "User1Id",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "ebcdd043-a59c-4376-a966-06a9a0295e64",
+      "id": "efc05698-d246-44e1-b6cf-db031f803dcf",
       "key": "User1AuthToken",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "42ec058d-331b-4d5c-a823-bcd61cb540f1",
+      "id": "859d809d-76c5-49b7-b512-0bdf07eda407",
       "key": "User2Id",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "67f28838-5ce0-44e8-98b1-bcd1d7927429",
+      "id": "33a1bf48-1aab-454f-8d01-76267a5e4bf7",
       "key": "User2AuthToken",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "737f9f1c-cd41-4f2f-84b2-c6cd1c56daa3",
+      "id": "f143c83f-f801-4872-801a-0bcc4eb9c2c6",
       "key": "User3Id",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "3b9655ba-bd79-46e6-b82a-d054696aa440",
+      "id": "2a8ddfaf-8208-4460-a9e5-68733d090866",
       "key": "User3AuthToken",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "9d1a3747-90a3-4131-bc3f-46904517803c",
+      "id": "817aebdd-65bb-4dd5-8ee5-61d3689d40f9",
       "key": "NewFileName1",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "ec8d756f-2fc3-44bc-8db0-d84e12361aef",
+      "id": "2c554fd8-74f3-414e-8f10-5cafa9c46e37",
       "key": "NewFileName2",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "ce74c9ba-50fd-44c3-aa33-556933868f7a",
+      "id": "c58c8864-851a-488b-804e-adf2f88bbd72",
       "key": "NewFileName3",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "2b2a32c8-3ba9-4887-824f-694c0a145818",
+      "id": "c55ad5bb-b20f-48f5-b495-f1e8cd67c6a3",
       "key": "NewFolderName1",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "9c6670b4-5272-4152-983c-b75b4680db65",
+      "id": "01e22810-6d6c-4208-9acd-aceaa976a7f4",
       "key": "NewFolderName2",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "7ce41687-1b7b-4f09-9245-bedf3f622103",
+      "id": "c150bad9-4c9e-4edc-bae0-c76cc738e301",
       "key": "NewFileName4",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "9342bc23-ede4-4577-8ed8-0b26b2dbfb73",
+      "id": "171a79b0-aa28-4859-a79d-f2e04ccb98f4",
       "key": "NewFileName5",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "fe14e03b-913e-4a70-871e-ef2a235c0354",
+      "id": "3f0c20e7-f5a8-4630-b8f7-8e0ff2083ebf",
       "key": "NewFileName6",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "714b8069-c0aa-48d8-a193-f90e0a301016",
+      "id": "65328f56-83f4-4028-8c51-cd4eb9530ad5",
       "key": "NewFileName7",
-      "value": "",
-      "type": "string"
+      "value": ""
     },
     {
-      "id": "87536b95-d4cc-4b23-aed5-8e61474beea2",
+      "id": "fb5ef615-e2bf-4514-9dfd-ac8d9a280afa",
       "key": "NewFileName8",
-      "value": "",
-      "type": "string"
+      "value": ""
+    },
+    {
+      "id": "c3c64a3a-5835-46a3-8c7b-43f82cd8e16d",
+      "key": "NewFolderName3",
+      "value": ""
     }
   ]
 }
