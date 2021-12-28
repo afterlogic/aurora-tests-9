@@ -1,0 +1,4508 @@
+{
+  "info": {
+    "_postman_id": "90263921-a85f-4f75-be85-afe62ad00844",
+    "name": "Files sharing function",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "item": [
+        {
+          "name": "Login as user1",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "98dd3db6-b443-4f2a-9af5-e3906b292535",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"Response contains AuthToken\", function () {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.be.an('object');",
+                  "    pm.expect(jsonData.Result).to.have.property('AuthToken').that.to.be.an('string');",
+                  "",
+                  "    pm.collectionVariables.set(\"User1Id\", jsonData.AuthenticatedUserId);",
+                  "    pm.collectionVariables.set(\"User1AuthToken\", jsonData.Result.AuthToken);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "5a64124b-f73d-4988-9b4b-e18f8894f153",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Core"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Login"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Login\":\"{{Email1}}\",\"Password\":\"{{Password1}}\",\"Pattern\":\"\"}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            },
+            "description": "Login as existing user"
+          },
+          "response": []
+        },
+        {
+          "name": "Login as user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "582d6c33-0314-4437-9e44-e76b84d44c24",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"Response contains AuthToken\", function () {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.be.an('object');",
+                  "    pm.expect(jsonData.Result).to.have.property('AuthToken').that.to.be.an('string');",
+                  "",
+                  "    pm.collectionVariables.set(\"User2Id\", jsonData.AuthenticatedUserId);",
+                  "    pm.collectionVariables.set(\"User2AuthToken\", jsonData.Result.AuthToken);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "d645ab83-87a7-44d4-9d05-64eb91a2427c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Core"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Login"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Login\":\"{{Email2}}\",\"Password\":\"{{Password2}}\",\"Pattern\":\"\"}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            },
+            "description": "Login as existing user"
+          },
+          "response": []
+        },
+        {
+          "name": "Login as user3",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "f329db8e-cbb9-4433-ab1a-030c90ef4302",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"Response contains AuthToken\", function () {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.be.an('object');",
+                  "    pm.expect(jsonData.Result).to.have.property('AuthToken').that.to.be.an('string');",
+                  "",
+                  "    pm.collectionVariables.set(\"User3Id\", jsonData.AuthenticatedUserId);",
+                  "    pm.collectionVariables.set(\"User3AuthToken\", jsonData.Result.AuthToken);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "7d6ef7ec-238d-45e9-87ce-ec6e5c3f7458",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Core"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Login"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Login\":\"{{Email3}}\",\"Password\":\"{{Password3}}\",\"Pattern\":\"\"}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            },
+            "description": "Login as existing user"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "667b11a1-6006-4488-b261-94cdf08d44de"
+    },
+    {
+      "name": "Files>UploadFile",
+      "item": [
+        {
+          "name": "UploadFile(read) user1",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "5a44af2f-2e95-4411-a2ce-8347e8373da7",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "var schema = {",
+                  "    \"items\": {",
+                  "        \"type\": \"object\",",
+                  "        \"properties\": {",
+                  "            \"Name\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"TempName\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"MimeType\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"Size\": {",
+                  "                \"type\": \"string\"",
+                  "            }",
+                  "        }",
+                  "    }",
+                  "};",
+                  "",
+                  "",
+                  "pm.test(\"File was uploaded successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.have.property('File').that.to.be.an('object');",
+                  "",
+                  "    pm.expect(tv4.validate(jsonData.Result.File, schema)).to.be.true;",
+                  "    ",
+                  "    pm.collectionVariables.set(\"NewFileName1\", jsonData.Result.File.Name);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "b5361154-a6f0-4a05-a6b9-462350557a59",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UploadFile",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"SubPath\":\"\",\"Path\":\"\",\"Overwrite\":false}",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-post-type",
+                  "value": "ajax",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-uploader",
+                  "type": "file",
+                  "src": "shared files/read.txt"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UploadFile(write) user1",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "e28ae5a5-f7f8-4607-9f81-969ea69b0b0e",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "var schema = {",
+                  "    \"items\": {",
+                  "        \"type\": \"object\",",
+                  "        \"properties\": {",
+                  "            \"Name\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"TempName\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"MimeType\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"Size\": {",
+                  "                \"type\": \"string\"",
+                  "            }",
+                  "        }",
+                  "    }",
+                  "};",
+                  "",
+                  "",
+                  "pm.test(\"File was uploaded successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.have.property('File').that.to.be.an('object');",
+                  "",
+                  "    pm.expect(tv4.validate(jsonData.Result.File, schema)).to.be.true;",
+                  "    ",
+                  "    pm.collectionVariables.set(\"NewFileName2\", jsonData.Result.File.Name);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "d541f9b0-7ecd-4d1f-a1a0-59dfdc3cf1a5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UploadFile",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"SubPath\":\"\",\"Path\":\"\",\"Overwrite\":false}",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-post-type",
+                  "value": "ajax",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-uploader",
+                  "type": "file",
+                  "src": "shared files/write.txt"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UploadFile(reshare) user1",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "6f7c45e5-95fb-42c3-bc06-544109109982",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "var schema = {",
+                  "    \"items\": {",
+                  "        \"type\": \"object\",",
+                  "        \"properties\": {",
+                  "            \"Name\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"TempName\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"MimeType\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"Size\": {",
+                  "                \"type\": \"string\"",
+                  "            }",
+                  "        }",
+                  "    }",
+                  "};",
+                  "",
+                  "",
+                  "pm.test(\"File was uploaded successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.have.property('File').that.to.be.an('object');",
+                  "",
+                  "    pm.expect(tv4.validate(jsonData.Result.File, schema)).to.be.true;",
+                  "    ",
+                  "    pm.collectionVariables.set(\"NewFileName3\", jsonData.Result.File.Name);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "d27b726d-9e21-410a-becf-bdcfdae2e55c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UploadFile",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"SubPath\":\"\",\"Path\":\"\",\"Overwrite\":false}",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-post-type",
+                  "value": "ajax",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-uploader",
+                  "type": "file",
+                  "src": "shared files/reshare.txt"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UploadFile(read) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "f41ece01-abc3-4e86-95bb-3a3b41ee637a",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "var schema = {",
+                  "    \"items\": {",
+                  "        \"type\": \"object\",",
+                  "        \"properties\": {",
+                  "            \"Name\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"TempName\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"MimeType\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"Size\": {",
+                  "                \"type\": \"string\"",
+                  "            }",
+                  "        }",
+                  "    }",
+                  "};",
+                  "",
+                  "",
+                  "pm.test(\"File was uploaded successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.have.property('File').that.to.be.an('object');",
+                  "",
+                  "    pm.expect(tv4.validate(jsonData.Result.File, schema)).to.be.true;",
+                  "    ",
+                  "    pm.collectionVariables.set(\"NewFileName4\", jsonData.Result.File.Name);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "b6a214f8-7a4e-4986-b23d-1223fc804c0e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UploadFile",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"SubPath\":\"\",\"Path\":\"\",\"Overwrite\":false}",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-post-type",
+                  "value": "ajax",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-uploader",
+                  "type": "file",
+                  "src": "shared files/read.txt"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UploadFile(write) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "32e3395a-5985-4f85-bf3b-ce893d8249fa",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "var schema = {",
+                  "    \"items\": {",
+                  "        \"type\": \"object\",",
+                  "        \"properties\": {",
+                  "            \"Name\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"TempName\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"MimeType\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"Size\": {",
+                  "                \"type\": \"string\"",
+                  "            }",
+                  "        }",
+                  "    }",
+                  "};",
+                  "",
+                  "",
+                  "pm.test(\"File was uploaded successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.have.property('File').that.to.be.an('object');",
+                  "",
+                  "    pm.expect(tv4.validate(jsonData.Result.File, schema)).to.be.true;",
+                  "    ",
+                  "    pm.collectionVariables.set(\"NewFileName5\", jsonData.Result.File.Name);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "50b0122a-3ab1-445e-8c74-70df1840f32a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UploadFile",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"SubPath\":\"\",\"Path\":\"\",\"Overwrite\":false}",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-post-type",
+                  "value": "ajax",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-uploader",
+                  "type": "file",
+                  "src": "shared files/write.txt"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UploadFile(reshare) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "3fbfda9b-babb-497d-b5f8-d3e15ecd2eb3",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "var schema = {",
+                  "    \"items\": {",
+                  "        \"type\": \"object\",",
+                  "        \"properties\": {",
+                  "            \"Name\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"TempName\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"MimeType\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"Size\": {",
+                  "                \"type\": \"string\"",
+                  "            }",
+                  "        }",
+                  "    }",
+                  "};",
+                  "",
+                  "",
+                  "pm.test(\"File was uploaded successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.have.property('File').that.to.be.an('object');",
+                  "",
+                  "    pm.expect(tv4.validate(jsonData.Result.File, schema)).to.be.true;",
+                  "    ",
+                  "    pm.collectionVariables.set(\"NewFileName6\", jsonData.Result.File.Name);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "773b3776-8ea2-433f-9480-135e39b329f1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UploadFile",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"SubPath\":\"\",\"Path\":\"\",\"Overwrite\":false}",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-post-type",
+                  "value": "ajax",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-uploader",
+                  "type": "file",
+                  "src": "shared files/reshare.txt"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "16340dd4-ba29-4e71-b751-7cca907268f4",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "52e699e9-9b08-43c3-80b4-56f558d7813a",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "4a676664-3a97-48d1-9939-35ec79d2fdcc",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "SharedFiles>UpdateShare",
+      "item": [
+        {
+          "name": "SharedFiles>UpdateShare(read)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b66bafe0-c64d-44c5-9b06-3bc104e570f8",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "    pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').to.be.an('number');",
+                  "    });",
+                  "",
+                  "    pm.test(\"File was shared successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "e4caf84d-88e0-4d2a-9b46-366270db1ff4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "SharedFiles",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UpdateShare",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Storage\":\"personal\",\"Path\":\"\",\"Id\":\"read.txt\",\"Shares\":[{\"PublicId\":\"{{Email2}}\",\"Access\":2}],\"IsDir\":false}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SharedFiles>UpdateShare(write)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "2fef79ff-3519-4db6-9163-42a574f71439",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "    pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').to.be.an('number');",
+                  "    });",
+                  "",
+                  "    pm.test(\"File was shared successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "42b2edc5-246a-4005-9d84-d080a14b5814",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "SharedFiles",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UpdateShare",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Storage\":\"personal\",\"Path\":\"\",\"Id\":\"write.txt\",\"Shares\":[{\"PublicId\":\"{{Email2}}\",\"Access\":1}],\"IsDir\":false}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SharedFiles>UpdateShare(reshare)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "dbb7d97b-9498-42aa-878d-ed542408fbce",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "    pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').to.be.an('number');",
+                  "    });",
+                  "",
+                  "    pm.test(\"File was shared successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "6aed0ecc-c9b8-413f-b275-273d5456f3cf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "SharedFiles",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UpdateShare",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Storage\":\"personal\",\"Path\":\"\",\"Id\":\"reshare.txt\",\"Shares\":[{\"PublicId\":\"{{Email2}}\",\"Access\":3}],\"IsDir\":false}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>GetFiles",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "6974557f-23ca-43d1-a047-cd22cc46a13c",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "var schema = {",
+                  "    \"items\": {",
+                  "        \"type\": \"object\",",
+                  "        \"properties\": {",
+                  "            \"Id\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"CTag\": {",
+                  "                \"type\": \"number\"",
+                  "            }",
+                  "        }",
+                  "    }",
+                  "};",
+                  "",
+                  "",
+                  "pm.test(\"Response contains valid files list\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.have.property('Items').that.to.be.an('array');",
+                  "",
+                  "    pm.expect(tv4.validate(jsonData.Result, schema)).to.be.true;",
+                  "});",
+                  "",
+                  "pm.test(\"Files names contain indexes (1)\", function() {",
+                  "    let",
+                  "        FileRead,",
+                  "        FileWrite,",
+                  "        FileReshare",
+                  "    ;",
+                  "",
+                  "    jsonData.Result.Items.forEach((item) => {",
+                  "        if (item.Name === 'read (1).txt') { FileRead = true } ",
+                  "        if (item.Name === 'write (1).txt') { FileWrite = true }",
+                  "        if (item.Name === 'reshare (1).txt') { FileReshare = true }",
+                  "    });",
+                  "",
+                  "    pm.expect(FileRead, true);",
+                  "    pm.expect(FileWrite, true);",
+                  "    pm.expect(FileReshare, true);",
+                  "});",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "8486daa8-d8f6-47a3-87e5-b271cb9ba300",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "GetFiles"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Pattern\":\"\"}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "6e49ad3f-b2dd-4571-95d6-e046104b93f2",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "beee2052-6148-45ea-8c3a-5a26b1eabb7a",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "054e2d39-9881-4680-a36b-e6016a2f193b",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Right permission checking TODO",
+      "item": [
+        {
+          "name": "UploadFile(read modified) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "16656d0f-dbe6-4fef-ae10-5c4aa62e9d90",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "var schema = {",
+                  "    \"items\": {",
+                  "        \"type\": \"object\",",
+                  "        \"properties\": {",
+                  "            \"Name\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"TempName\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"MimeType\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"Size\": {",
+                  "                \"type\": \"string\"",
+                  "            }",
+                  "        }",
+                  "    }",
+                  "};",
+                  "",
+                  "",
+                  "pm.test(\"File was uploaded successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('ErrorCode', 0);",
+                  "",
+                  "    // pm.expect(tv4.validate(jsonData.Result.File, schema)).to.be.true;",
+                  "    ",
+                  "    // pm.collectionVariables.set(\"NewFileName4\", jsonData.Result.File.Name);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "53ed918a-2a0f-4c6b-9995-736334a9c477",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "SkipTest",
+                "value": "ErrorCode",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UploadFile",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"SubPath\":\"\",\"Path\":\"\",\"Overwrite\":true}",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-post-type",
+                  "value": "ajax",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-uploader",
+                  "type": "file",
+                  "src": "shared files modified/read (1).txt"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UploadFile(write modified) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "480ff0d4-5af8-43ca-8751-f28c6e97dc2c",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "var schema = {",
+                  "    \"items\": {",
+                  "        \"type\": \"object\",",
+                  "        \"properties\": {",
+                  "            \"Name\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"TempName\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"MimeType\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"Size\": {",
+                  "                \"type\": \"string\"",
+                  "            }",
+                  "        }",
+                  "    }",
+                  "};",
+                  "",
+                  "",
+                  "pm.test(\"File was uploaded successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.have.property('File').that.to.be.an('object');",
+                  "",
+                  "    pm.expect(tv4.validate(jsonData.Result.File, schema)).to.be.true;",
+                  "    ",
+                  "    pm.collectionVariables.set(\"NewFileName5\", jsonData.Result.File.Name);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "cd4038ca-541a-49a5-a7e5-c1512bc9738c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UploadFile",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"SubPath\":\"\",\"Path\":\"\",\"Overwrite\":true}",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-post-type",
+                  "value": "ajax",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-uploader",
+                  "type": "file",
+                  "src": "shared files modified/write (1).txt"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UploadFile(reshare modified) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c5efce1f-7b11-4225-a8df-0043bc20c5f2",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "var schema = {",
+                  "    \"items\": {",
+                  "        \"type\": \"object\",",
+                  "        \"properties\": {",
+                  "            \"Name\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"TempName\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"MimeType\": {",
+                  "                \"type\": \"string\"",
+                  "            },",
+                  "            \"Size\": {",
+                  "                \"type\": \"string\"",
+                  "            }",
+                  "        }",
+                  "    }",
+                  "};",
+                  "",
+                  "",
+                  "pm.test(\"File was uploaded successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result').that.to.have.property('File').that.to.be.an('object');",
+                  "",
+                  "    pm.expect(tv4.validate(jsonData.Result.File, schema)).to.be.true;",
+                  "    ",
+                  "    pm.collectionVariables.set(\"NewFileName6\", jsonData.Result.File.Name);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "f88882c6-4e53-415b-9e51-ec6e5e7c9048",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UploadFile",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"SubPath\":\"\",\"Path\":\"\",\"Overwrite\":true}",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-post-type",
+                  "value": "ajax",
+                  "type": "text"
+                },
+                {
+                  "key": "jua-uploader",
+                  "type": "file",
+                  "src": "shared files modified/reshare (1).txt"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "4d8502c0-c84e-4f72-ba6b-2e1b732057ff",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "ffa9ede5-0f45-40fc-8eb7-0460acf1fcfa",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "a25d9d10-ee01-423f-a0db-e4adb84a8545",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "SharedFolders",
+      "item": [
+        {
+          "name": "CreateFolder (user1)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "eac2bb1a-be40-4e05-845b-b53f37ec26f5",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Folder was created successfully\", function() {",
+                  "   pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "   pm.collectionVariables.set(\"NewFolderName1\", \"Shared folder\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "c284db0d-3e34-4d6e-b166-fccceff7dd87",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "CreateFolder",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"FolderName\":\"Shared folder\"}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreateFolder (user2)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "07031f35-5848-43f3-ae5c-2b49da6b3a63",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Folder was created successfully\", function() {",
+                  "   pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "   pm.collectionVariables.set(\"NewFolderName2\", \"Shared folder\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "eab6193e-f6af-45d8-8d23-62d5d41e1a54",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "CreateFolder",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"FolderName\":\"Shared folder\"}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SharedFolders>UpdateShare(write)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "70a3c311-4bfb-4d9d-897b-a94c4f98553a",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "    pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').to.be.an('number');",
+                  "    });",
+                  "",
+                  "    pm.test(\"Folder was shared successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "1df3dad6-2beb-41ee-a759-5d133d4936f3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "SharedFiles",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UpdateShare",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Storage\":\"personal\",\"Path\":\"\",\"Id\":\"{{NewFolderName1}}\",\"Shares\":[{\"PublicId\":\"{{Email2}}\",\"Access\":1}],\"IsDir\":true}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "5bdf6982-4413-4055-8fcf-07331a88d014",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "af2be3c3-4293-4608-b3ae-61a4f9dc6425",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "567c48b6-779e-4a3b-a789-94daf0f5c69c",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Files and folder renaming (user 2)",
+      "item": [
+        {
+          "name": "Rename (file1) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c246152e-5298-4526-8f5c-a3f01e907791",
+                "exec": [
+                  "let jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"File cannot be renamed\", function() {",
+                  "   pm.expect(jsonData).to.have.property('ErrorCode', 108);",
+                  "});",
+                  "   ",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "4554a40e-6845-4534-aa1f-27f150cb2e16",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "5b036f84-2e30-49ce-8584-86ed97c8b098",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "SkipTest",
+                "value": "ErrorCode",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Rename"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"read (1).txt\",\"NewName\":\"read renamed.txt\",\"IsLink\":false,\"IsFolder\":false}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rename (file2) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "9c312e9a-712a-4024-8c89-7814c893520b",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"File was renamed successfully\", function() {",
+                  "   pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "   pm.collectionVariables.set(\"NewFileName5\", \"write renamed.txt\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "93b94397-1d69-45d3-9c23-d7853c48b742",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "876a0265-654f-4e14-a486-0fdb1a1182a4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Rename"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"write (1).txt\",\"NewName\":\"write renamed.txt\",\"IsLink\":false,\"IsFolder\":false}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rename (file3) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "5e786d65-7c06-4146-ba2b-95c7ae3bc9b1",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"File was renamed successfully\", function() {",
+                  "   pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "pm.collectionVariables.set(\"NewFileName6\", \"reshare renamed.txt\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "bd43cb0d-d69f-4821-a8dd-4ae7503f7b07",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "8e236c8a-304b-4b5a-b437-0115e0c0c947",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Rename"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"reshare (1).txt\",\"NewName\":\"reshare renamed.txt\",\"IsLink\":false,\"IsFolder\":false}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rename (folder) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "223c4186-663b-4d61-b631-f180661f126b",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Folder was renamed successfully\", function() {",
+                  "   pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "   pm.collectionVariables.set(\"NewFolderName3\", \"Shared folder renamed2\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "1df934b9-4d96-4767-a633-21cdc6c4fb94",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Rename"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"Shared folder (1)\",\"NewName\":\"Shared folder renamed2\",\"IsFolder\":true}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "479c3973-53b1-4165-8b26-86acf64223f1",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "54c50808-62e6-4651-9192-4308955e5aa9",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "8abb3a58-a036-45de-bb5d-db5d2b1e2482",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shared files moving to folder(user 2)",
+      "item": [
+        {
+          "name": "Files>Move (read)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "ea85644b-b81d-4ed4-8cda-42332e10c6a6",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File movement to shared folder is forbidden\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', false);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "e11ae0fc-037d-4c0a-83ed-3656b4c9c856",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Move"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"read (1).txt\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            },
+            "description": "The request performs moving shared with me file to the shared with me folderd. This action should be denied and must return an error."
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Move (write)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "5b899fd6-ea4d-4977-bf98-4e952547e1e6",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File has moved successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "c905fe43-6c5f-4e1a-80af-72b935b1865b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Move"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName5}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Move (reshare)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c4da7040-1f11-4136-b096-5cee4de65f35",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File movement to shared folder is forbidden\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', false);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "55d8c6b6-1380-4e9f-83ea-42e10f524b39",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Move"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"reshare renamed.txt\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "98f7a8da-ba9f-4302-a9a6-2360c60b23e2",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "bedc3637-ff30-46bf-99a8-905871c3a961",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "e7dc0e11-d9e3-48e9-ba04-5e110fe9d3b5",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Files moving to shared to me folder(user 2)",
+      "item": [
+        {
+          "name": "Files>Move (read)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "de8e4b52-d86a-48f0-91a1-bae05a0cc037",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File movement to shared folder is forbidden\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', false);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "a2f20dda-25e8-4285-ba6b-1832783db1ae",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Move"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"read (1).txt\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            },
+            "description": "The request performs moving shared with me file to the shared with me folderd. This action should be denied and must return an error."
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Move (write)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "0430737b-c165-44fa-b176-9165712cfbc8",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File has moved successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "805052e5-aee3-4993-8e3c-64178a6431d4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Move"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName5}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Move (reshare)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "dc657b24-8615-4bd3-9685-cdba99a8fc6e",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File movement to shared folder is forbidden\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', false);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "604583eb-846f-4cc8-949d-c3c4fde4795a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Move"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName2}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"reshare renamed.txt\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "e5028769-8029-44ed-8780-9e9cf80c74ee",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "288ac76c-7367-4dc4-9921-8f9d648cd945",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "414e3030-2c93-4d3e-b92a-f0d8335724cb",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Files and folder renaming (user 1)",
+      "item": [
+        {
+          "name": "Files>Rename (file1) user1",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "640b0182-0332-4039-b165-e7a795c5cabf",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"File was renamed successfully\", function() {",
+                  "   pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "   pm.collectionVariables.set(\"NewFileName1\", \"read renamed1.txt\");",
+                  "});",
+                  "   ",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "4a915331-8288-4dc0-8401-4c8ddafda09a",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "8320068f-fb37-43e6-b887-6e24bcb53a24",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Rename"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"{{NewFileName1}}\",\"NewName\":\"read renamed1.txt\",\"IsLink\":false,\"IsFolder\":false}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Rename (file2) user1",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "57f808c1-f361-48c7-b8f6-c5b11cba1ac2",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"File was renamed successfully\", function() {",
+                  "   pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "   pm.collectionVariables.set(\"NewFileName2\", \"write renamed1.txt\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "6d5b61b3-11d1-454d-95e7-c0ec89ed050e",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "82067afe-152a-47b6-8dfb-3950bc724604",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Rename"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"{{NewFileName2}}\",\"NewName\":\"write renamed1.txt\",\"IsLink\":false,\"IsFolder\":false}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Rename (file3) user1",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c5c3d839-c11f-402b-b67f-63c2f68caa7c",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"File was renamed successfully\", function() {",
+                  "   pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "   pm.collectionVariables.set(\"NewFileName3\", \"reshare renamed1.txt\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "85a4205d-7772-43c2-8847-470d6bd34275",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "854b9f0e-1d4f-4ddd-bebb-a50df508baa2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Rename"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"{{NewFileName3}}\",\"NewName\":\"reshare renamed1.txt\",\"IsLink\":false,\"IsFolder\":false}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Rename (folder) user1",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "95f2ff8f-bc8b-417b-a8af-9f76483b85ec",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Folder was renamed successfully\", function() {",
+                  "   pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "   pm.collectionVariables.set(\"NewFolderName1\", \"Shared folder renamed1\");",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "3e9f1bdc-d250-4d1a-b804-0fca0652aee8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Rename"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Name\":\"{{NewFolderName1}}\",\"NewName\":\"Shared folder renamed1\",\"IsFolder\":true}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "4b8e3dac-e21d-4e94-ba4d-ce771309c17b",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "dd1d99fd-8095-4934-82a3-eabf96157d22",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "dbbdedfe-090d-40c3-b3a6-1f5b2c0831c2",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Files moving (user 1)",
+      "item": [
+        {
+          "name": "Files>Move (read.txt)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "fb0fde3e-9827-41a0-936f-fbf7a78d1087",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File has moved successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "b20ed0cd-1a1b-4f20-a0d5-caa764e243b1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Move"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName1}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName1}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Move (write)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b1c0b6b7-824d-48c4-827c-5298d4588286",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File has moved successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "07a527a6-345c-4c38-b1d4-f824f993fe80",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Move"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName1}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName2}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Move (reshare)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "cd167320-ac55-4e23-bac8-5e745539b9e8",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File has moved successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "389cef81-19de-4618-9930-0b32c9479875",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Move"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"/{{NewFolderName1}}\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName3}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "931461d0-2ad1-452f-bbf6-1d706fb6c999",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "b0308b2e-51d8-48ad-96fc-57a8157fe50f",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "6abfa187-1f03-48a2-bf4f-f63e886f0307",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Update reshare (user2)",
+      "item": [
+        {
+          "name": "UpdateShare(reshare) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "538f63a2-dac7-48cf-98dc-f866fec78bca",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "    pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').to.be.an('number');",
+                  "    });",
+                  "",
+                  "    pm.test(\"File was reshared successfully\", function() {",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "   ",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "97e84031-fdc8-4e1c-a1a2-3c02b89691ef",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "SharedFiles",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "UpdateShare",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Storage\":\"personal\",\"Path\":\"\",\"Id\":\"{{NewFileName6}}\",\"Shares\":[{\"PublicId\":\"{{Email2}}\",\"Access\":3},{\"PublicId\":\"{{Email3}}\",\"Access\":1}],\"IsDir\":false}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "48352e06-9fde-481b-b951-544f2a154eda",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "5adc7f30-ee8f-4edf-8778-f792c0d01e21",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "5442a929-152e-49e1-a5ea-9c5b77ed0d70",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Files moving back (user 1)",
+      "item": [
+        {
+          "name": "Files>Move (3 files)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "91026181-3940-4513-ab16-519bd2a58fea",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File has moved successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "0efcca7a-8054-47f1-aeeb-21320afd4bea",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Move"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"/{{NewFolderName1}}\",\"ToPath\":\"\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"/{{NewFolderName1}}\",\"Name\":\"{{NewFileName1}}\",\"IsFolder\":false},{\"FromType\":\"personal\",\"FromPath\":\"/{{NewFolderName1}}\",\"Name\":\"{{NewFileName2}}\",\"IsFolder\":false},{\"FromType\":\"personal\",\"FromPath\":\"/{{NewFolderName1}}\",\"Name\":\"{{NewFileName3}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "5809bf13-a70f-4018-8da7-d79dac172435",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "cb6d74c8-0131-4375-9cbf-5ece174bd168",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "badeb942-48d7-4440-9c32-f61a4047502f",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Сopying files (user 1)",
+      "item": [
+        {
+          "name": "Files>Copy (read to Personal)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "346fdd37-8c26-495a-a9c5-51c93ade5513",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File has copied successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});",
+                  "",
+                  "pm.collectionVariables.set(\"NewFileName7\", \"read renamed1 (1).txt\");",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "0a352792-50ba-41c6-9831-3836beb84912",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Copy"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"personal\",\"FromPath\":\"\",\"ToPath\":\"\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName1}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Copy (read to Corporate)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "2a5ceda9-7c21-476e-a78a-25c59b8a4588",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File has copied successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});",
+                  "",
+                  "pm.collectionVariables.set(\"NewFileName8\", \"reshare renamed1.txt\");",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "1a5b7485-4d80-4570-a03a-df6b2e8bfffb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Copy"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"FromType\":\"personal\",\"ToType\":\"corporate\",\"FromPath\":\"\",\"ToPath\":\"\",\"Files\":[{\"FromType\":\"personal\",\"FromPath\":\"\",\"Name\":\"{{NewFileName3}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Delete copied file from Personal",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "6fcf752b-80c2-4830-8343-0cec8824c59e",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File was deleted successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});",
+                  "",
+                  "pm.collectionVariables.set(\"NewFileName7\", \"\");",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "df1ab99e-3010-4f34-a8cf-7231ce92c9ba",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Delete"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFileName7}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Delete copied file from Corporate",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "92ef31e5-c993-4fcf-81f9-c0bce1c150a4",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File was deleted successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});",
+                  "",
+                  "pm.collectionVariables.set(\"NewFileName8\", \"\");",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "ccd10af2-8f47-4e65-b26e-57eaaa172ed4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Delete"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"corporate\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFileName8}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "0ea63ac7-a610-45aa-b700-46a569f3007b",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "557493ad-10da-4482-943c-c05e4e0ede6f",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "bede3d4b-12d4-4735-9e54-3098ab5c9c3a",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Leave share (user2)",
+      "item": [
+        {
+          "name": "UpdateShare(file 1) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "2df87f15-7f25-4902-8eb1-50c5f23ff1b7",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File was deleted successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "cb3180fa-a897-48b9-b5b2-ecab6115ef14",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "Delete",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"read (1).txt\",\"IsFolder\":false}]}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateShare(file 2) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "251a227a-dd01-4add-9a7e-0753e3e36036",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File was deleted successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});",
+                  "",
+                  "pm.collectionVariables.set(\"NewFileName5\", \"\");"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "b253b87d-831b-4851-b143-87c46eaf8cd3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "Delete",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFileName5}}\",\"IsFolder\":false}]}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateShare(file 3) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "1161c070-2c14-4907-bbe6-d90c2e4a59f6",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"File was deleted successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});",
+                  "",
+                  "pm.collectionVariables.set(\"NewFileName6\", \"\");"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "fa56a810-f0b7-4450-a29b-2a2fb4a3e301",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "Delete",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFileName6}}\",\"IsFolder\":false}]}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateShare(folder) user2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "8147ac5b-86ea-41fb-8b61-23dc9319d1e6",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"Folder was deleted successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});",
+                  "",
+                  "pm.collectionVariables.set(\"NewFolderName2\", \"\");"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "ab948006-6ae7-45a3-ab85-f57360e66e40",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "value": "Files",
+                  "type": "text"
+                },
+                {
+                  "key": "Method",
+                  "value": "Delete",
+                  "type": "text"
+                },
+                {
+                  "key": "Parameters",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFolderName2}}\",\"IsFolder\":true}]}",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "3713c8e1-4e00-4bce-aaf6-18b591059be6",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "93460444-45cd-4135-9b16-fe9380d93276",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "dd52a80c-d781-4d4e-a794-7c4a62cb5e58",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Deleting all files (user 1,2)",
+      "item": [
+        {
+          "name": "Files>Delete files (user1)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c1f30c1c-d806-4a4c-b29a-08e80b0d5ed4",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"Files and folder were deleted successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});",
+                  "",
+                  "pm.collectionVariables.set(\"NewFolderName1\", \"\");",
+                  "pm.collectionVariables.set(\"NewFileName1\", \"\");",
+                  "pm.collectionVariables.set(\"NewFileName2\", \"\");",
+                  "pm.collectionVariables.set(\"NewFileName3\", \"\");"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "c072135c-9df2-4d0d-af19-fd02e0416736",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User1AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Delete"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFolderName1}}\",\"IsFolder\":true},{\"Path\":\"\",\"Name\":\"{{NewFileName1}}\",\"IsFolder\":false},{\"Path\":\"\",\"Name\":\"{{NewFileName2}}\",\"IsFolder\":false},{\"Path\":\"\",\"Name\":\"{{NewFileName3}}\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Files>Delete files (user2)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c587b40e-cf8d-49b9-a020-ffe6d240b409",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "",
+                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
+                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
+                  "});",
+                  "",
+                  "pm.test(\"Files and folder were deleted successfully\", function () {    ",
+                  "    pm.expect(jsonData).to.have.property('Result', true);",
+                  "});",
+                  "",
+                  "// pm.collectionVariables.set(\"NewFolderName1\", \"\");",
+                  "// pm.collectionVariables.set(\"NewFileName1\", \"\");",
+                  "// pm.collectionVariables.set(\"NewFileName2\", \"\");",
+                  "// pm.collectionVariables.set(\"NewFileName3\", \"\");"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "1a081f0a-03c0-4c3a-a4da-35c5c9b27e5d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{User2AuthToken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "Module",
+                  "type": "text",
+                  "value": "Files"
+                },
+                {
+                  "key": "Method",
+                  "type": "text",
+                  "value": "Delete"
+                },
+                {
+                  "key": "Parameters",
+                  "type": "text",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"Shared folder\",\"IsFolder\":true},{\"Path\":\"\",\"Name\":\"read.txt\",\"IsFolder\":false},{\"Path\":\"\",\"Name\":\"reshare.txt\",\"IsFolder\":false},{\"Path\":\"\",\"Name\":\"write.txt\",\"IsFolder\":false}]}"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "a91e36b9-d4b6-40bb-a4e8-6191128e9dc0",
+      "auth": {
+        "type": "noauth"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "40c443f3-ddd8-406c-bb28-32d66b0bef8b",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "e398550c-77a8-4a0e-a37f-9d073b3ff22e",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "acee8613-349b-41bd-846d-44f69ab9514b",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "502843d2-b433-4072-9e79-4c65528d354c",
+        "type": "text/javascript",
+        "exec": [
+          "pm.test(\"Response is ok\", function() {",
+          "    pm.response.to.have.property('code', 200);",
+          "",
+          "    //TODO add skipping for the request that normally return 403 code",
+          "});",
+          "",
+          "let bIsJsonResponse = false;",
+          "pm.response.headers.each(function(oHeader) {",
+          "    if (oHeader.key === 'Content-Type' && oHeader.value === 'application/json; charset=utf-8') {",
+          "        bIsJsonResponse = true;",
+          "    }",
+          "});",
+          "",
+          "if (bIsJsonResponse) {",
+          "    ",
+          "    let bSkipErrorCodeTest = false;",
+          "    pm.request.headers.each(function(oHeader) {",
+          "        if (oHeader.key === 'SkipTest' && oHeader.value === 'ErrorCode') {",
+          "            bSkipErrorCodeTest = true;",
+          "        }",
+          "    });",
+          "    if (!bSkipErrorCodeTest) {",
+          "        let jsonData = pm.response.json();",
+          "        pm.test(\"Response doesn't contain errors\", function() {",
+          "            pm.expect(jsonData).to.not.have.property('ErrorCode');",
+          "        });",
+          "    }",
+          "}"
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "0c8389a9-5f6e-4893-8a5b-700fa5c60e47",
+      "key": "User1Id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "ebcdd043-a59c-4376-a966-06a9a0295e64",
+      "key": "User1AuthToken",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "42ec058d-331b-4d5c-a823-bcd61cb540f1",
+      "key": "User2Id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "67f28838-5ce0-44e8-98b1-bcd1d7927429",
+      "key": "User2AuthToken",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "737f9f1c-cd41-4f2f-84b2-c6cd1c56daa3",
+      "key": "User3Id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "3b9655ba-bd79-46e6-b82a-d054696aa440",
+      "key": "User3AuthToken",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "9d1a3747-90a3-4131-bc3f-46904517803c",
+      "key": "NewFileName1",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "ec8d756f-2fc3-44bc-8db0-d84e12361aef",
+      "key": "NewFileName2",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "ce74c9ba-50fd-44c3-aa33-556933868f7a",
+      "key": "NewFileName3",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "2b2a32c8-3ba9-4887-824f-694c0a145818",
+      "key": "NewFolderName1",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "9c6670b4-5272-4152-983c-b75b4680db65",
+      "key": "NewFolderName2",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "7ce41687-1b7b-4f09-9245-bedf3f622103",
+      "key": "NewFileName4",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "9342bc23-ede4-4577-8ed8-0b26b2dbfb73",
+      "key": "NewFileName5",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "fe14e03b-913e-4a70-871e-ef2a235c0354",
+      "key": "NewFileName6",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "714b8069-c0aa-48d8-a193-f90e0a301016",
+      "key": "NewFileName7",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "87536b95-d4cc-4b23-aed5-8e61474beea2",
+      "key": "NewFileName8",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
