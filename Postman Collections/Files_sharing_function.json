@@ -3701,7 +3701,7 @@
         }
       ],
       "id": "0ea63ac7-a610-45aa-b700-46a569f3007b",
-      "description": "First 2 tests are perform copy function for shared files by owner (user1).\nLast 2 tests delete copied files.",
+      "description": "First 2 tests are to perform copy function for shared files by owner (user1).\nLast 2 tests delete copied files.",
       "auth": {
         "type": "noauth"
       },
@@ -4276,87 +4276,87 @@
   ],
   "variable": [
     {
-      "id": "93915674-5503-4278-9e72-bbd8f5f0c7f6",
+      "id": "2b3d566f-7821-4533-ad42-b68359b10bb4",
       "key": "User1Id",
       "value": ""
     },
     {
-      "id": "acdf3bf5-c0d6-481b-99cb-b8e097873ba2",
+      "id": "96c6d672-70e0-4e7c-a447-0f1e901404b0",
       "key": "User1AuthToken",
       "value": ""
     },
     {
-      "id": "168f415e-2c3c-4d98-9018-9d0d1a3b4ba0",
+      "id": "f12d387d-ce00-4b76-a3a0-0faa33b6d77c",
       "key": "User2Id",
       "value": ""
     },
     {
-      "id": "0e6a5e21-0122-49e7-a107-c4a05785013b",
+      "id": "cfbacc40-4738-4271-ab69-d1ef84da18c4",
       "key": "User2AuthToken",
       "value": ""
     },
     {
-      "id": "64771b8b-e4c7-4362-96e5-0c3bcccf7d17",
+      "id": "a025b17c-5707-4f97-819b-33d089355209",
       "key": "User3Id",
       "value": ""
     },
     {
-      "id": "9189aac9-58b7-4f9c-baa9-97d262bee918",
+      "id": "5b553d1a-e428-4a24-ad8c-230e50d21490",
       "key": "User3AuthToken",
       "value": ""
     },
     {
-      "id": "64decb3b-7458-45d2-9a72-f4b10ddea0d8",
+      "id": "88b743c6-fcef-4127-bc5f-16f862472c42",
       "key": "NewFileName1",
       "value": ""
     },
     {
-      "id": "26a8b6fc-52fb-45ac-a199-af5f1f7ff595",
+      "id": "8851628c-8861-42c4-95d6-36c3da4b79d0",
       "key": "NewFileName2",
       "value": ""
     },
     {
-      "id": "0e3a96ab-abc2-4559-a44b-962a7e8a3757",
+      "id": "e7f731ec-ce93-4fa4-a0fb-1ddc00beb424",
       "key": "NewFileName3",
       "value": ""
     },
     {
-      "id": "835fbf58-338f-4950-8a42-315ecea32dca",
+      "id": "ba2a8bcf-3340-425d-b207-566fe872b949",
       "key": "NewFolderName1",
       "value": ""
     },
     {
-      "id": "4c95274a-337f-4435-b832-b4795fca650c",
+      "id": "6cf58bee-e0a9-44c1-b3e4-af05fa3c40bf",
       "key": "NewFolderName2",
       "value": ""
     },
     {
-      "id": "676d684a-e3b5-408f-9840-01c7575ed4a2",
+      "id": "702cf216-c1ae-4100-a40a-85721b0fb2c2",
       "key": "NewFolderName3",
       "value": ""
     },
     {
-      "id": "44144ec3-74fa-403d-8798-5e89f07e8548",
+      "id": "243ff522-57a5-4fc5-b3ae-8ed71058e8ea",
       "key": "NewFileName4",
       "value": ""
     },
     {
-      "id": "79063741-4533-496f-98ac-46817801ca85",
+      "id": "d928dea2-3e50-4abb-91ca-5c86b79672b8",
       "key": "NewFileName5",
       "value": ""
     },
     {
-      "id": "91819df8-e200-4369-83c7-d4ad596e97f6",
+      "id": "0a12a501-778e-465a-a32e-944c617a777a",
       "key": "NewFileName6",
       "value": ""
     },
     {
-      "id": "0450085b-b530-4ad4-a757-58e57613d5a4",
+      "id": "7dc12423-db10-495d-87b1-bf8139609b67",
       "key": "NewFileName7",
       "value": ""
     },
     {
-      "id": "2914e25a-a327-418c-8623-186a6bdffbeb",
+      "id": "819ee133-eb1f-4fe7-a88a-fbba8ade3d4e",
       "key": "NewFileName8",
       "value": ""
     }
