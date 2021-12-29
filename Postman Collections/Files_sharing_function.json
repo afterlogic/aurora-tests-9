@@ -226,6 +226,59 @@
             "description": "Login as existing user"
           },
           "response": []
+        },
+        {
+          "name": "Reset Collection Variables",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "2f5d794f-891f-4781-b3a6-1d14cf6aa805",
+                "exec": [
+                  "pm.collectionVariables.set(\"User1Id\", \"\");\r",
+                  "pm.collectionVariables.set(\"User1AuthToken\", \"\");\r",
+                  "pm.collectionVariables.set(\"User2Id\", \"\");\r",
+                  "pm.collectionVariables.set(\"User2AuthToken\", \"\");\r",
+                  "pm.collectionVariables.set(\"User3Id\", \"\");\r",
+                  "pm.collectionVariables.set(\"User3AuthToken\", \"\");\r",
+                  "pm.collectionVariables.set(\"UserId\", \"\");\r",
+                  "pm.collectionVariables.set(\"TempUserId\", \"\");\r",
+                  "pm.collectionVariables.set(\"NewFileName1\", \"\");\r",
+                  "pm.collectionVariables.set(\"NewFileName2\", \"\");\r",
+                  "pm.collectionVariables.set(\"NewFileName3\", \"\");\r",
+                  "pm.collectionVariables.set(\"NewFolderName1\", \"\");\r",
+                  "pm.collectionVariables.set(\"NewFolderName2\", \"\");\r",
+                  "pm.collectionVariables.set(\"NewFileName4\", \"\");\r",
+                  "pm.collectionVariables.set(\"NewFileName5\", \"\");\r",
+                  "pm.collectionVariables.set(\"NewFileName6\", \"\");\r",
+                  "pm.collectionVariables.set(\"NewFileName7\", \"\");\r",
+                  "pm.collectionVariables.set(\"NewFileName8\", \"\");"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "1ece24d7-dec1-4a32-be3a-7fda41b3d6af",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{HostName}}?/Api/",
+              "host": [
+                "{{HostName}}"
+              ],
+              "query": [
+                {
+                  "key": "/Api/",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "667b11a1-6006-4488-b261-94cdf08d44de",
@@ -4223,59 +4276,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "Reset Collection Variables",
-      "event": [
-        {
-          "listen": "prerequest",
-          "script": {
-            "id": "2f5d794f-891f-4781-b3a6-1d14cf6aa805",
-            "exec": [
-              "pm.collectionVariables.set(\"User1Id\", \"\");\r",
-              "pm.collectionVariables.set(\"User1AuthToken\", \"\");\r",
-              "pm.collectionVariables.set(\"User2Id\", \"\");\r",
-              "pm.collectionVariables.set(\"User2AuthToken\", \"\");\r",
-              "pm.collectionVariables.set(\"User3Id\", \"\");\r",
-              "pm.collectionVariables.set(\"User3AuthToken\", \"\");\r",
-              "pm.collectionVariables.set(\"UserId\", \"\");\r",
-              "pm.collectionVariables.set(\"TempUserId\", \"\");\r",
-              "pm.collectionVariables.set(\"NewFileName1\", \"\");\r",
-              "pm.collectionVariables.set(\"NewFileName2\", \"\");\r",
-              "pm.collectionVariables.set(\"NewFileName3\", \"\");\r",
-              "pm.collectionVariables.set(\"NewFolderName1\", \"\");\r",
-              "pm.collectionVariables.set(\"NewFolderName2\", \"\");\r",
-              "pm.collectionVariables.set(\"NewFileName4\", \"\");\r",
-              "pm.collectionVariables.set(\"NewFileName5\", \"\");\r",
-              "pm.collectionVariables.set(\"NewFileName6\", \"\");\r",
-              "pm.collectionVariables.set(\"NewFileName7\", \"\");\r",
-              "pm.collectionVariables.set(\"NewFileName8\", \"\");"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "id": "1ece24d7-dec1-4a32-be3a-7fda41b3d6af",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "{{HostName}}?/Api/",
-          "host": [
-            "{{HostName}}"
-          ],
-          "query": [
-            {
-              "key": "/Api/",
-              "value": null
-            }
-          ]
-        }
-      },
-      "response": []
     }
   ],
   "event": [
@@ -4329,87 +4329,87 @@
   ],
   "variable": [
     {
-      "id": "5584b0ad-b83d-46b7-bbe8-38350e2fd459",
+      "id": "d2a8ed64-b623-47ac-b6a9-b590b66aac5f",
       "key": "User1Id",
       "value": ""
     },
     {
-      "id": "7e4a0c23-8054-4855-8328-6d2c4261e30f",
+      "id": "265c29aa-fa6c-4983-a781-a1506e5dd966",
       "key": "User1AuthToken",
       "value": ""
     },
     {
-      "id": "48c3d599-a578-4719-a8c8-3a46bc3c6572",
+      "id": "f22bab7f-19d8-4c1f-a375-9fc95fd279e1",
       "key": "User2Id",
       "value": ""
     },
     {
-      "id": "dd22eb37-e076-4e76-9359-586822264f13",
+      "id": "eb24114e-1893-4c82-8245-fc907572108b",
       "key": "User2AuthToken",
       "value": ""
     },
     {
-      "id": "cbe90a76-c7f1-42e0-b43e-767af605da62",
+      "id": "2e47d77e-87d6-4a82-892f-009cb7d27ab7",
       "key": "User3Id",
       "value": ""
     },
     {
-      "id": "d7a4ed04-3a21-498f-9580-b8f5b56286ad",
+      "id": "dbd5b5aa-add5-48b0-b0f6-02f74ba15bcb",
       "key": "User3AuthToken",
       "value": ""
     },
     {
-      "id": "9737a104-d74c-45fc-a94d-5de328efb939",
+      "id": "46af263d-b5ef-4e86-8074-1586818fee92",
       "key": "NewFileName1",
       "value": ""
     },
     {
-      "id": "ca86e082-a841-4b6e-9ce2-43ad1984cfa2",
+      "id": "208d3145-b326-48ce-a12a-710ec9101512",
       "key": "NewFileName2",
       "value": ""
     },
     {
-      "id": "a016f1b3-aa69-446c-9f9c-172f04ee874e",
+      "id": "17ec2297-63d6-40b5-8bd7-132132048f08",
       "key": "NewFileName3",
       "value": ""
     },
     {
-      "id": "a7eec6a5-556e-49d4-b2f2-ca231e69158c",
+      "id": "b57f5c6a-8af6-4ea5-abd1-d5f0dc9aea3f",
       "key": "NewFolderName1",
       "value": ""
     },
     {
-      "id": "4f6c9031-0c1d-44b3-b7cb-466ee2a96b24",
+      "id": "ca676097-9cef-4ebe-a1b2-73a248ff2f63",
       "key": "NewFolderName2",
       "value": ""
     },
     {
-      "id": "6f146f86-d468-48a4-a757-62af49280511",
+      "id": "b8ec0711-f4ac-4cac-bda4-8eb68db1ef86",
       "key": "NewFolderName3",
       "value": ""
     },
     {
-      "id": "f272555a-c058-4e33-8b8e-fd8a5e93a64c",
+      "id": "ae2541b1-fa04-4d5d-8a4c-987c75489547",
       "key": "NewFileName4",
       "value": ""
     },
     {
-      "id": "14c9de04-7bbf-434e-ac56-1e16c537ea61",
+      "id": "5471dfa0-484c-4d24-a04e-de5b9ad725a8",
       "key": "NewFileName5",
       "value": ""
     },
     {
-      "id": "f0a6c06c-2631-4878-acb7-f1723696f88c",
+      "id": "1ab61857-a4f9-4107-8b43-47ad072930b1",
       "key": "NewFileName6",
       "value": ""
     },
     {
-      "id": "9b34ac4b-dff0-46fc-9dc9-a99437f808a2",
+      "id": "aeab6697-e307-4402-88d9-572fea84446a",
       "key": "NewFileName7",
       "value": ""
     },
     {
-      "id": "58ef7ec8-84f3-4552-a52c-04420d463997",
+      "id": "d32e6286-5da3-47e7-9872-45e295a1d21d",
       "key": "NewFileName8",
       "value": ""
     }
