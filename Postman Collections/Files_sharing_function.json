@@ -1190,6 +1190,7 @@
         }
       ],
       "id": "6e49ad3f-b2dd-4571-95d6-e046104b93f2",
+      "description": "These tests are to perform sharing function of three different right permissions (read, write and reshare).\nTest GetFiles checks if shared files with the same names with existed ones are added indexes to the end of their names.",
       "auth": {
         "type": "noauth"
       },
@@ -4267,87 +4268,87 @@
   ],
   "variable": [
     {
-      "id": "f38857f8-61bf-4691-a531-8eb643597bc7",
+      "id": "0075174d-51d0-4dc4-8719-5b39a55830f4",
       "key": "User1Id",
       "value": ""
     },
     {
-      "id": "37510a03-6bdd-471c-a2d8-d234d09232b0",
+      "id": "69d025e6-155d-48d7-990f-eea97ec62afd",
       "key": "User1AuthToken",
       "value": ""
     },
     {
-      "id": "b4b991a7-fdbc-4c95-9f95-e2e8d9e22355",
+      "id": "4d00d1e5-1141-48d1-9d42-00855f9eb5ec",
       "key": "User2Id",
       "value": ""
     },
     {
-      "id": "af1427ae-99e9-46ea-bbac-6f546bfe6f08",
+      "id": "f5c29e8f-e96c-4d78-9550-2dae17f96c21",
       "key": "User2AuthToken",
       "value": ""
     },
     {
-      "id": "eaa7d29b-7850-4576-a361-afa4a06b89b9",
+      "id": "89cb957a-0710-4027-802d-6dfc706640a9",
       "key": "User3Id",
       "value": ""
     },
     {
-      "id": "1eba98d4-9e01-463d-b583-2602287b8a10",
+      "id": "e7fcaf3b-0c61-4e36-8480-a7331cdb0ffb",
       "key": "User3AuthToken",
       "value": ""
     },
     {
-      "id": "6d42e0d8-2645-4fc2-a4a3-189405651f35",
+      "id": "db7f85bf-b69b-499e-a635-df541cdb2db9",
       "key": "NewFileName1",
       "value": ""
     },
     {
-      "id": "fd999461-e0aa-4d20-9e95-a6176b17d3e3",
+      "id": "d900b474-0455-41dc-aea9-e3521761a977",
       "key": "NewFileName2",
       "value": ""
     },
     {
-      "id": "6fc6ba41-0d50-4871-bcfe-5ab24602e910",
+      "id": "51805ed5-14e4-4e02-9bda-655ebab8940b",
       "key": "NewFileName3",
       "value": ""
     },
     {
-      "id": "3719f992-ed9c-48ec-a895-f6a36a1b88c8",
+      "id": "b6b26d15-a98b-41bc-a074-6c520255fe6d",
       "key": "NewFolderName1",
       "value": ""
     },
     {
-      "id": "1b2995e8-0fb2-44c7-bc31-a2b98a638a93",
+      "id": "d363873c-d284-409f-885a-16e0203da33f",
       "key": "NewFolderName2",
       "value": ""
     },
     {
-      "id": "3f6ba231-304f-4026-986a-529633680928",
+      "id": "3ae1fb44-05cc-48e5-bfca-3e981d09cdae",
       "key": "NewFolderName3",
       "value": ""
     },
     {
-      "id": "f202fe29-4f35-4ab5-b1d2-7f0da2eb8bf3",
+      "id": "f0192806-3638-4d0c-b0d5-f2a9e1ed7d5a",
       "key": "NewFileName4",
       "value": ""
     },
     {
-      "id": "913a10f5-39c9-4f46-8bba-9e274eded3e0",
+      "id": "e92aa41a-b2b8-4890-9440-2fce879152ca",
       "key": "NewFileName5",
       "value": ""
     },
     {
-      "id": "4e8b110e-e712-43e7-b31b-fa97f672e191",
+      "id": "186230b9-90e9-46ee-8eae-be0c8eef0ee8",
       "key": "NewFileName6",
       "value": ""
     },
     {
-      "id": "5db72032-2d36-405e-bc85-fb326e4d4f58",
+      "id": "07d8fe52-f393-4fca-9f33-b46c3a4aa4ee",
       "key": "NewFileName7",
       "value": ""
     },
     {
-      "id": "47e387f2-0cad-40cd-9514-1d2b04f589cd",
+      "id": "95bb2183-c811-4743-9156-7de83c105940",
       "key": "NewFileName8",
       "value": ""
     }
