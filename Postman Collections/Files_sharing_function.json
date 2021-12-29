@@ -3373,6 +3373,7 @@
         }
       ],
       "id": "5809bf13-a70f-4018-8da7-d79dac172435",
+      "description": "This test moves files read.txt, write.txt and reshare.txt to Personal storage.",
       "auth": {
         "type": "noauth"
       },
@@ -4276,87 +4277,87 @@
   ],
   "variable": [
     {
-      "id": "ec1cbea3-59c8-4a9c-b620-eaa2ccffa5bd",
+      "id": "a215ceba-7924-4825-a91f-6a3319b40a06",
       "key": "User1Id",
       "value": ""
     },
     {
-      "id": "0b8cd5d8-15b9-431d-a46b-06b754f0b590",
+      "id": "3af03499-d2b7-40c7-96df-84d50a818a72",
       "key": "User1AuthToken",
       "value": ""
     },
     {
-      "id": "e68f5e02-2af6-492d-be9a-d9dfc6723508",
+      "id": "d18945e7-5f04-4dfd-b62d-bff866de675a",
       "key": "User2Id",
       "value": ""
     },
     {
-      "id": "c683f226-9dea-4dd3-8edd-1f746b9f00ee",
+      "id": "f2b61544-daa9-4374-906d-ce3b464b19cd",
       "key": "User2AuthToken",
       "value": ""
     },
     {
-      "id": "fe4a3712-1fc7-472d-9894-2a369077e2cb",
+      "id": "e5088d53-54ba-4e22-a3aa-0a536f8135ec",
       "key": "User3Id",
       "value": ""
     },
     {
-      "id": "7f597fab-b089-47c0-923b-84fe606a9d3f",
+      "id": "42ae8027-9ac5-4c10-96d5-7bc2b464cf5a",
       "key": "User3AuthToken",
       "value": ""
     },
     {
-      "id": "ce070804-0b75-46d2-a296-7b836ea178be",
+      "id": "38e37fbb-c4dd-42e2-9b30-f13cfac4efc5",
       "key": "NewFileName1",
       "value": ""
     },
     {
-      "id": "0fd6d411-c045-4517-8785-a303da4b17d6",
+      "id": "3ecc425f-7e53-45f2-a91c-fe0c28db1d07",
       "key": "NewFileName2",
       "value": ""
     },
     {
-      "id": "ebdd8d2c-db40-4d2a-9cdd-de14d5ca1abc",
+      "id": "294efa35-0510-488e-ba12-fe17cc46d908",
       "key": "NewFileName3",
       "value": ""
     },
     {
-      "id": "de67f020-4e94-4b3d-bc0d-e0b5b9b05d05",
+      "id": "16bc7ce7-9819-4054-b39a-563851bc2d45",
       "key": "NewFolderName1",
       "value": ""
     },
     {
-      "id": "875ebdb2-017b-412f-92f5-cfeb211f6605",
+      "id": "5b1775c9-6883-4737-a1eb-c1b5a4f41123",
       "key": "NewFolderName2",
       "value": ""
     },
     {
-      "id": "bb4faaef-ab69-4ec4-b19d-ab361f4806f5",
+      "id": "badd8100-6c6e-4a29-ab88-52743e3b019f",
       "key": "NewFolderName3",
       "value": ""
     },
     {
-      "id": "0fd5214f-ffc4-4693-a5c9-f9abf938c9b3",
+      "id": "c6dde8f5-c3e0-44ce-96b0-6139490ab7cb",
       "key": "NewFileName4",
       "value": ""
     },
     {
-      "id": "ad5e9b80-595a-4cc4-8db9-d29304aa0b05",
+      "id": "bccb398c-4fd9-4dfe-9fa0-fc7e57ff0e0f",
       "key": "NewFileName5",
       "value": ""
     },
     {
-      "id": "901c1a82-4125-4efe-8c25-b94f88f6ce8b",
+      "id": "220b631f-36c3-4417-b7cd-df1d09b216a0",
       "key": "NewFileName6",
       "value": ""
     },
     {
-      "id": "5d2edb7f-c2c4-4de6-a8f8-a705807af0b5",
+      "id": "401ab637-041e-4d04-a9d0-1ca6f2f4a702",
       "key": "NewFileName7",
       "value": ""
     },
     {
-      "id": "6ff22081-da65-42bb-b293-a79d9ca1b4cc",
+      "id": "f045761c-93ec-47d7-af6f-faa8fd936ff9",
       "key": "NewFileName8",
       "value": ""
     }
