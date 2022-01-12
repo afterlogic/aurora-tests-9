@@ -3843,78 +3843,6 @@
           "response": []
         },
         {
-          "name": "UpdateShare(write.txt) user2",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "251a227a-dd01-4add-9a7e-0753e3e36036",
-                "exec": [
-                  "var jsonData = pm.response.json();",
-                  "",
-                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
-                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
-                  "});",
-                  "",
-                  "pm.test(\"File was deleted successfully\", function () {    ",
-                  "    pm.expect(jsonData).to.have.property('Result', true);",
-                  "});",
-                  "",
-                  "pm.collectionVariables.set(\"NewFileName5\", \"\");"
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "id": "b253b87d-831b-4851-b143-87c46eaf8cd3",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{User2AuthToken}}"
-              }
-            },
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "Module",
-                  "value": "Files",
-                  "type": "text"
-                },
-                {
-                  "key": "Method",
-                  "value": "Delete",
-                  "type": "text"
-                },
-                {
-                  "key": "Parameters",
-                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFileName5}}\",\"IsFolder\":false}]}",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": {
-              "raw": "{{HostName}}?/Api/",
-              "host": [
-                "{{HostName}}"
-              ],
-              "query": [
-                {
-                  "key": "/Api/",
-                  "value": null
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
           "name": "UpdateShare(reshare.txt) user2",
           "event": [
             {
@@ -4317,87 +4245,87 @@
   ],
   "variable": [
     {
-      "id": "23cb79e1-312a-41bb-834e-ba1f7e768775",
+      "id": "e276c1a5-883b-4886-9dbe-251ccd4018c0",
       "key": "User1Id",
       "value": ""
     },
     {
-      "id": "22294e28-5606-418b-9983-98384ac6cab1",
+      "id": "6f5a9a88-c533-4c49-b0a1-6ba7bf4bb8e9",
       "key": "User1AuthToken",
       "value": ""
     },
     {
-      "id": "95508021-01c1-4cb2-9de3-51d5bdb40fcf",
+      "id": "425a27f5-5fb9-4e2e-8f87-89633e022f0c",
       "key": "User2Id",
       "value": ""
     },
     {
-      "id": "a4ff4939-b566-43d2-bb65-358461c4dabe",
+      "id": "1422dcbe-3026-4df9-9268-cbc6810088ed",
       "key": "User2AuthToken",
       "value": ""
     },
     {
-      "id": "bac79806-aad6-4f16-ab1e-9c12bd9add4e",
+      "id": "a3b216b0-128d-4be5-8792-849a12e098d6",
       "key": "User3Id",
       "value": ""
     },
     {
-      "id": "1fe1c87b-0e9d-426a-a2cd-25e7548f67ae",
+      "id": "80532916-3d2e-4ebf-85fd-181be260f391",
       "key": "User3AuthToken",
       "value": ""
     },
     {
-      "id": "329bacbb-f4a7-42ff-8d17-c991010b6e5c",
+      "id": "ebfdb509-3370-4e4c-983f-c612ebafb644",
       "key": "NewFileName1",
       "value": ""
     },
     {
-      "id": "6ad277d8-5f32-48db-aa76-d99e8f42d1af",
+      "id": "8c41901f-0f19-46a2-a9c9-49031f9f22fd",
       "key": "NewFileName2",
       "value": ""
     },
     {
-      "id": "586400df-f91e-4a4f-90db-8c08232221c9",
+      "id": "35c187f2-9c38-410f-baa5-c6dcd8719494",
       "key": "NewFileName3",
       "value": ""
     },
     {
-      "id": "4385ff12-60c3-4b8d-b732-7581bd8edbd5",
+      "id": "165bdfb1-d528-4dc5-aff9-dd8f973dfcfe",
       "key": "NewFolderName1",
       "value": ""
     },
     {
-      "id": "5560a932-d270-4897-a2b9-4d401d975286",
+      "id": "152d824f-93b8-49e7-95f0-73384a834144",
       "key": "NewFolderName2",
       "value": ""
     },
     {
-      "id": "61087607-5f60-4b91-a27b-1df8e1b33e24",
+      "id": "295aa535-e044-4110-8646-b573d3604695",
       "key": "NewFolderName3",
       "value": ""
     },
     {
-      "id": "d83de7d3-2c0a-4fde-858e-df27558c8f00",
+      "id": "edbbafe2-1f6c-40a0-8cc6-f2b96232e639",
       "key": "NewFileName4",
       "value": ""
     },
     {
-      "id": "37a1802d-6154-40d4-9647-a999aa44ca48",
+      "id": "f1b02bbd-e678-4026-a5f4-306449d98dc9",
       "key": "NewFileName5",
       "value": ""
     },
     {
-      "id": "489bc518-79c7-4bc1-af81-7f2696b372e9",
+      "id": "0ee7a327-3451-4e40-af78-fc7d7b011ba1",
       "key": "NewFileName6",
       "value": ""
     },
     {
-      "id": "2b2dd99c-498f-446c-9f14-b75c32afa421",
+      "id": "a56280a8-fe80-432d-b8d0-cec8f3c99f75",
       "key": "NewFileName7",
       "value": ""
     },
     {
-      "id": "6ce0fd45-5502-4d52-ae78-54cbf453601b",
+      "id": "1fb82934-4311-4281-b7c3-9ecd44ef748a",
       "key": "NewFileName8",
       "value": ""
     }
