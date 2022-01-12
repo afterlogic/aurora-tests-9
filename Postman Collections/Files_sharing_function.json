@@ -3786,7 +3786,7 @@
                   "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
                   "});",
                   "",
-                  "pm.test(\"File was deleted successfully\", function () {    ",
+                  "pm.test(\"Files were leaved share successfully\", function () {    ",
                   "    pm.expect(jsonData).to.have.property('Result', true);",
                   "});"
                 ],
@@ -4173,87 +4173,87 @@
   ],
   "variable": [
     {
-      "id": "2899d616-cf1f-4ba3-b11a-f893d04e7ccd",
+      "id": "ef982096-4438-473f-968a-4a4736989602",
       "key": "User1Id",
       "value": ""
     },
     {
-      "id": "7e9fd77d-e187-4e8b-aaa6-1ef9f9d99a3f",
+      "id": "2bbf7535-5b48-4ded-a8f2-fbb8a930d85d",
       "key": "User1AuthToken",
       "value": ""
     },
     {
-      "id": "320c29f9-3550-4577-836c-ce895e537e03",
+      "id": "b9e6e3f3-1170-4845-ae6c-f614920e8a56",
       "key": "User2Id",
       "value": ""
     },
     {
-      "id": "3f7f78c8-ee18-4d47-8fec-4ddfa0b5f01e",
+      "id": "aea12e36-66dc-46c4-b4bb-c2645a7fae2f",
       "key": "User2AuthToken",
       "value": ""
     },
     {
-      "id": "84670f07-acd5-4bc6-a2ba-4776d80129c2",
+      "id": "c5f18c83-3354-44dd-a1dd-09c707067fea",
       "key": "User3Id",
       "value": ""
     },
     {
-      "id": "d466a9f5-c9f0-4a2a-b96b-d696b5db332d",
+      "id": "494da50f-1d40-4c13-aaf9-ab8ab342aeca",
       "key": "User3AuthToken",
       "value": ""
     },
     {
-      "id": "9927a21c-c3cd-40f3-959a-6754d8eb5135",
+      "id": "b120b7f3-0260-4ae1-80c9-e1aa87db39ce",
       "key": "NewFileName1",
       "value": ""
     },
     {
-      "id": "5f6dfc90-1f87-475d-822d-bb46b53bdc8a",
+      "id": "fb637fef-854f-4efc-b2ba-035e337e0ff5",
       "key": "NewFileName2",
       "value": ""
     },
     {
-      "id": "356294ea-12bb-4f3c-96cc-7134e2c165e9",
+      "id": "bab70d03-60d2-405b-b122-0f98e3312af1",
       "key": "NewFileName3",
       "value": ""
     },
     {
-      "id": "a5c42539-e769-46fe-9976-f3f581863d2e",
+      "id": "5d67fe6c-103c-4d29-b6df-38d6b621dba0",
       "key": "NewFolderName1",
       "value": ""
     },
     {
-      "id": "9bec0f3c-bfc7-4c01-b722-35df141afd63",
+      "id": "83c2515b-f65a-44f8-ae27-20d1f77159d1",
       "key": "NewFolderName2",
       "value": ""
     },
     {
-      "id": "b6e839e3-8564-4fb7-8a4d-1df70521cfca",
+      "id": "cd985217-022c-4f9b-babf-32966b016491",
       "key": "NewFolderName3",
       "value": ""
     },
     {
-      "id": "345e9419-f980-4bc8-921d-56aa191332a2",
+      "id": "f3430712-ed0e-4aa7-920d-f598556fea36",
       "key": "NewFileName4",
       "value": ""
     },
     {
-      "id": "b873dc7b-f3e2-4398-9953-af8c44e80b30",
+      "id": "4cc8cab6-bb78-49ff-b961-accac23cded8",
       "key": "NewFileName5",
       "value": ""
     },
     {
-      "id": "e1ab3b09-9787-4197-85a2-d09cbe6b8055",
+      "id": "9a3ab48a-bf52-4147-a3da-49a3fd08f57f",
       "key": "NewFileName6",
       "value": ""
     },
     {
-      "id": "37974fca-8275-4960-8f4a-1be4a356ce72",
+      "id": "34b7cd72-af4d-4a1d-84dd-98c17933aecd",
       "key": "NewFileName7",
       "value": ""
     },
     {
-      "id": "104e40d2-44b3-4220-acfd-a7c23d5470f3",
+      "id": "59821730-2464-40e7-8800-5185af7999ab",
       "key": "NewFileName8",
       "value": ""
     }
