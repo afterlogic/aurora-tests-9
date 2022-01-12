@@ -3947,78 +3947,6 @@
       "name": "Deleting all files (user 1,2)",
       "item": [
         {
-          "name": "Delete (folder) user2",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "8147ac5b-86ea-41fb-8b61-23dc9319d1e6",
-                "exec": [
-                  "var jsonData = pm.response.json();",
-                  "",
-                  "pm.test(\"Response contains AuthenticatedUserId and Result\", function () {",
-                  "    pm.expect(jsonData).to.have.property('AuthenticatedUserId').that.to.be.an('number');",
-                  "});",
-                  "",
-                  "pm.test(\"Folder was deleted successfully\", function () {    ",
-                  "    pm.expect(jsonData).to.have.property('Result', true);",
-                  "});",
-                  "",
-                  "pm.collectionVariables.set(\"NewFolderName2\", \"\");"
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "id": "ab948006-6ae7-45a3-ab85-f57360e66e40",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{User2AuthToken}}"
-              }
-            },
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "Module",
-                  "value": "Files",
-                  "type": "text"
-                },
-                {
-                  "key": "Method",
-                  "value": "Delete",
-                  "type": "text"
-                },
-                {
-                  "key": "Parameters",
-                  "value": "{\"Type\":\"personal\",\"Path\":\"\",\"Items\":[{\"Path\":\"\",\"Name\":\"{{NewFolderName2}}\",\"IsFolder\":true}]}",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": {
-              "raw": "{{HostName}}?/Api/",
-              "host": [
-                "{{HostName}}"
-              ],
-              "query": [
-                {
-                  "key": "/Api/",
-                  "value": null
-                }
-              ]
-            }
-          },
-          "response": []
-        },
-        {
           "name": "Delete files (user1)",
           "event": [
             {
@@ -4245,87 +4173,87 @@
   ],
   "variable": [
     {
-      "id": "ec98be9f-960e-4a88-8d2d-d89f8142bb49",
+      "id": "13ae2f00-51c2-481e-9bcb-cb8c54a8703a",
       "key": "User1Id",
       "value": ""
     },
     {
-      "id": "6975725e-09fe-40cc-8de8-96c2929cd538",
+      "id": "9c957454-8a85-43c7-a7cd-5f601175a81b",
       "key": "User1AuthToken",
       "value": ""
     },
     {
-      "id": "873e17b8-5f0b-4753-bd8e-6be785e14b91",
+      "id": "637df6bf-c4db-44a6-88c9-fd87ee35df31",
       "key": "User2Id",
       "value": ""
     },
     {
-      "id": "2f45f592-62eb-4ccf-b1bc-a9c146c97769",
+      "id": "36a3eeae-9621-4bd4-a44e-4af5cad2c16c",
       "key": "User2AuthToken",
       "value": ""
     },
     {
-      "id": "421000a4-162c-4146-9879-006699cdfb0f",
+      "id": "47dfc535-a34c-4c5b-b0cc-9d1b9b015a2d",
       "key": "User3Id",
       "value": ""
     },
     {
-      "id": "a2197076-a5a0-4f68-82bc-db02a2d707c3",
+      "id": "32b73af0-0969-4643-91a6-1d0abf6d6239",
       "key": "User3AuthToken",
       "value": ""
     },
     {
-      "id": "96b75ff3-c7de-4034-a280-fe1f16e17986",
+      "id": "757554e2-b9b9-48a0-882a-d1dabd2e0bcf",
       "key": "NewFileName1",
       "value": ""
     },
     {
-      "id": "5f82aa08-a7ec-4bea-a81c-7b11d9e093b9",
+      "id": "4f55fb66-30c9-4598-979c-a213d75e58e6",
       "key": "NewFileName2",
       "value": ""
     },
     {
-      "id": "8e2c9c6a-deac-4de3-ae98-55ca773adf05",
+      "id": "dd90571e-8c62-456e-b341-d08f4cd496ef",
       "key": "NewFileName3",
       "value": ""
     },
     {
-      "id": "14280ae2-8911-4373-b335-b337e9d87549",
+      "id": "c7b127f9-2452-44e3-b196-df1d3fe2ceba",
       "key": "NewFolderName1",
       "value": ""
     },
     {
-      "id": "1df5aca3-c2d3-46ba-aae8-b8fe52a7e065",
+      "id": "f10ab6ad-3066-4435-9d36-f56a929909cb",
       "key": "NewFolderName2",
       "value": ""
     },
     {
-      "id": "437c03a4-0336-4fb1-b658-2ccb61ae2d90",
+      "id": "1751f11e-0a51-4b5c-b8f6-305eca616686",
       "key": "NewFolderName3",
       "value": ""
     },
     {
-      "id": "880910de-d050-40bd-9b7b-1b9e4b086faf",
+      "id": "30461f3f-2fc6-4773-be95-a6821a1e8c00",
       "key": "NewFileName4",
       "value": ""
     },
     {
-      "id": "5f08f67f-0f4a-4e71-9d8c-c0ea6f408181",
+      "id": "dd0ac585-cda6-45b5-8645-deac62963a16",
       "key": "NewFileName5",
       "value": ""
     },
     {
-      "id": "dbc36db6-a9da-414c-947c-cd2a2f6e49ce",
+      "id": "fab9ac9c-5edf-450a-94c3-94c83194b75e",
       "key": "NewFileName6",
       "value": ""
     },
     {
-      "id": "55a4e5d4-89f4-418f-aebb-77079776a2d2",
+      "id": "9f139668-ad97-4f7a-b440-bd63c80dd546",
       "key": "NewFileName7",
       "value": ""
     },
     {
-      "id": "bb792287-4f56-48de-ae29-b447ac1f0249",
+      "id": "9ca3a991-ab7b-44ee-abd3-d4dbd0cc1d99",
       "key": "NewFileName8",
       "value": ""
     }
