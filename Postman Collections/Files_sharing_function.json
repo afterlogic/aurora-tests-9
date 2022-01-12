@@ -3822,7 +3822,7 @@
                 },
                 {
                   "key": "Parameters",
-                  "value": "{\"Type\":\"personal\",\"Path\":\"/Shared folder\",\"Items\":[{\"Path\":\"/Shared folder\",\"Name\":\"{{NewFileName4}}\",\"IsFolder\":false},{\"Path\":\"/Shared folder\",\"Name\":\"{{NewFileName5}}\",\"IsFolder\":false},{\"Path\":\"/Shared folder\",\"Name\":\"{{NewFileName6}}\",\"IsFolder\":false}]}",
+                  "value": "{\"Type\":\"personal\",\"Path\":\"/{{NewFolderName2}}\",\"Items\":[{\"Path\":\"/{{NewFolderName2}}\",\"Name\":\"{{NewFileName4}}\",\"IsFolder\":false},{\"Path\":\"/{{NewFolderName2}}\",\"Name\":\"{{NewFileName5}}\",\"IsFolder\":false},{\"Path\":\"/{{NewFolderName2}}\",\"Name\":\"{{NewFileName6}}\",\"IsFolder\":false}]}",
                   "type": "text"
                 }
               ]
@@ -4173,87 +4173,87 @@
   ],
   "variable": [
     {
-      "id": "d6953afc-8119-4efa-ba63-84f1c04d1c55",
+      "id": "224299ca-6b69-4993-aa0d-fce7ac25410c",
       "key": "User1Id",
       "value": ""
     },
     {
-      "id": "c816b4c5-900b-4211-9161-64bdac2d64da",
+      "id": "b6424431-7419-4083-a49a-85be535ade95",
       "key": "User1AuthToken",
       "value": ""
     },
     {
-      "id": "7362765a-d494-4717-b639-2f22e3b34ac5",
+      "id": "e269dbd3-297f-4de9-ac75-50ca29b028ce",
       "key": "User2Id",
       "value": ""
     },
     {
-      "id": "c1701d60-5c14-40d2-97a7-da8e5d2ff60c",
+      "id": "7ea73bc4-8564-4301-8cb8-9e1be190cac5",
       "key": "User2AuthToken",
       "value": ""
     },
     {
-      "id": "c4d81f24-12f0-4a94-b94b-e2cbe5eea736",
+      "id": "9628bd2d-d0b1-488c-b456-1481a30e6b30",
       "key": "User3Id",
       "value": ""
     },
     {
-      "id": "8bb53707-bd13-4ca1-a0b6-c1d13aff48f1",
+      "id": "73594340-dd85-4005-af60-366b2d3fa845",
       "key": "User3AuthToken",
       "value": ""
     },
     {
-      "id": "e8a306c1-90e6-4996-8613-265356bb59be",
+      "id": "c00a8312-e734-42de-ac73-9cf0dca34c48",
       "key": "NewFileName1",
       "value": ""
     },
     {
-      "id": "e997ec92-61b4-402d-8987-0d1607bf8d9b",
+      "id": "395acbef-1777-4ffb-9b60-3abc2e040ec8",
       "key": "NewFileName2",
       "value": ""
     },
     {
-      "id": "7717fdea-ef4b-4e12-b79b-4d5161bdcbdc",
+      "id": "a88e9ea0-1959-4349-85d8-88138e4b4f47",
       "key": "NewFileName3",
       "value": ""
     },
     {
-      "id": "6d7775c3-d920-48ac-bb05-d2543d6ebaeb",
+      "id": "fa82b309-a3f0-44cb-925c-77eba92158d4",
       "key": "NewFolderName1",
       "value": ""
     },
     {
-      "id": "b3d36913-be81-4dad-b7e8-445afe2e8a82",
+      "id": "f176796f-6c8a-4d16-9489-e821f207f978",
       "key": "NewFolderName2",
       "value": ""
     },
     {
-      "id": "76cc7d01-77be-4c1a-a477-8bfbd4dac480",
+      "id": "aeb27142-0b22-4878-bed6-6d7cc15558cf",
       "key": "NewFolderName3",
       "value": ""
     },
     {
-      "id": "adb0ce64-b250-4551-bcd5-6bd6dbb98b5b",
+      "id": "b1081c90-2a49-4c75-9f76-9c0edb53d947",
       "key": "NewFileName4",
       "value": ""
     },
     {
-      "id": "62cc85b8-0e83-43ba-91b3-26bcc3af7ee5",
+      "id": "8d380ab6-677a-427f-a80f-e84e1f4b1de4",
       "key": "NewFileName5",
       "value": ""
     },
     {
-      "id": "e3ffcf52-331d-4670-bab2-5224d491bfc3",
+      "id": "8c331901-51fe-4a92-83f6-ef248a7f9747",
       "key": "NewFileName6",
       "value": ""
     },
     {
-      "id": "320b7ddd-a7e9-4e44-9d66-1f9cb2c89f53",
+      "id": "7a274790-9166-483a-92cf-32c02339f6c2",
       "key": "NewFileName7",
       "value": ""
     },
     {
-      "id": "bb79e805-f76b-4ad5-99dc-2defbde1a25c",
+      "id": "a8689c91-475d-44e4-a8e9-9452a4f84000",
       "key": "NewFileName8",
       "value": ""
     }
